@@ -3,24 +3,20 @@
 <head>
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width,initial-scale=1"/>
-<title>竞彩足球</title>
+<title>竞彩足球 · 个人数据台</title>
 </head>
 <body style="margin:0;background:#0e1320;color:#e8edf6;font-family:-apple-system,sans-serif;padding:24px">正在打开原版界面…</body>
 <script>
 (async function(){
-  var n=8, parts=[];
+  var n=4, parts=[];
   for (var i=0;i<n;i++){
-    var r=await fetch("./p"+i+".txt",{cache:"no-store"});
-    if(!r.ok) throw new Error("缺少 p"+i+".txt");
+    var r=await fetch("./h"+i+".txt",{cache:"no-store"});
+    if(!r.ok) throw new Error("缺少 h"+i+".txt");
     parts.push(await r.text());
   }
-  var bin=Uint8Array.from(atob(parts.join("")), function(c){return c.charCodeAt(0);});
-  if(!window.DecompressionStream) throw new Error("浏览器不支持解压");
-  var stream=new Blob([bin]).stream().pipeThrough(new DecompressionStream("gzip"));
-  var html=await new Response(stream).text();
-  document.open(); document.write(html); document.close();
+  document.open(); document.write(parts.join("")); document.close();
 })().catch(function(e){
-  document.body.innerHTML="原版打开失败："+e+"<br>请换Safari/Chrome再试。";
+  document.body.innerHTML="打开失败："+e+"<br>请用系统浏览器打开本页。";
 });
 </script>
 </html>
