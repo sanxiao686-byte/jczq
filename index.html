@@ -3,75 +3,17 @@
 <head>
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width,initial-scale=1"/>
-<title>竞彩足球 · 25维数据台</title>
-<style>
-:root{--bg:#0e1320;--card:#182136;--line:#26324d;--txt:#e8edf6;--muted:#8b98b5;--gold:#f5b942;--win:#ff5a5f;--draw:#f5b942;--lose:#4da3ff}
-*{box-sizing:border-box;margin:0;padding:0}
-body{background:var(--bg);color:var(--txt);font-family:-apple-system,"Microsoft YaHei",sans-serif;font-size:14px}
-header{background:linear-gradient(180deg,#141b2e,#101727);padding:12px 16px;border-bottom:1px solid var(--line);position:sticky;top:0}
-h1{font-size:17px}
-.meta{color:var(--muted);font-size:12px;margin-top:4px}
-nav{display:flex;gap:6px;padding:8px 16px;background:#131a2a}
-nav button{background:none;border:none;color:var(--muted);padding:8px 12px;font-weight:600}
-nav button.active{color:var(--txt);border-bottom:2px solid var(--gold)}
-main{max-width:1080px;margin:0 auto;padding:14px}
-.hint{background:#1e2940;border-left:3px solid var(--gold);padding:10px;margin-bottom:12px;font-size:13px;color:#c5d0db}
-.match{background:var(--card);border:1px solid var(--line);border-radius:10px;margin-bottom:12px;overflow:hidden}
-.head{padding:12px;cursor:pointer;display:flex;flex-wrap:wrap;gap:8px;align-items:center}
-.tag{background:#23314f;color:#9fb2d8;font-size:11px;padding:2px 7px;border-radius:5px}
-.teams{font-weight:700;flex:1}
-.odds span{margin-right:8px}
-.w{color:var(--win)}
-.d{color:var(--draw)}
-.l{color:var(--lose)}
-.panel{display:none;border-top:1px solid var(--line);padding:10px 12px}
-.match.open .panel{display:block}
-.dim{display:flex;gap:8px;padding:6px 0;border-bottom:1px dashed #26324d;font-size:13px}
-.dim .n{min-width:130px;color:var(--gold)}
-.dim .s{min-width:52px;color:var(--muted)}
-.rec,.review{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:12px;margin-bottom:10px}
-footer{text-align:center;color:var(--muted);padding:20px;font-size:12px}
-</style>
+<title>竞彩足球</title>
 </head>
-<body>
-<header>
-<h1>竞彩足球 · 25维数据台</h1>
-<div class="meta">点开每场可看基本面 / 交锋 / 近6场 / 赔率等 25 维 · <span id="upd"></span></div>
-</header>
-<nav>
-<button class="active" data-tab="today">今日全场次</button>
-<button data-tab="rec">今日推荐</button>
-<button data-tab="review">昨日复盘</button>
-</nav>
-<main>
-<div class="hint">旧版 25 维界面已从历史恢复结构。没有公开账本的维度标「数据不足/待补」，不编造必发和凯利。</div>
-<section id="today"></section>
-<section id="rec" hidden></section>
-<section id="review" hidden></section>
-</main>
-<footer>仅作个人赛事整理，不提供购彩。完整旧页备份在 commit 68f5d9b。</footer>
+<body style="background:#0e1320;color:#e8edf6;font-family:sans-serif;padding:24px">
+正在打开原版页面…
 <script>
-function render(d){
-  document.getElementById('upd').textContent=d.updated||'';
-  document.getElementById('today').innerHTML=(d.matches||[]).map((m,i)=>`
-    <div class="match" onclick="this.classList.toggle('open')">
-      <div class="head">
-        <span class="tag">${m.code}</span><span class="tag">${m.league||''}</span>
-        <span class="teams">${m.home} vs ${m.away}</span>
-        <span class="odds"><span class="w">${(m.eu||[])[0]||'-'}</span><span class="d">${(m.eu||[])[1]||'-'}</span><span class="l">${(m.eu||[])[2]||'-'}</span></span>
-        <span class="tag">${m.handicap||''}</span>
-        <span>${m.lean||''}</span>
-      </div>
-      <div class="panel">${(m.dims||[]).map(x=>`<div class="dim"><div class="n">${x.id}. ${x.name}</div><div class="s">${x.status}</div><div>${x.value||'—'}</div></div>`).join('')||'<div class="dim">无维度</div>'}</div>
-    </div>`).join('');
-  document.getElementById('rec').innerHTML=(d.recs||[]).map(r=>`<div class="rec"><b style="color:var(--gold)">${r.code}</b> ${r.pick}<p style="margin-top:6px;color:#c5d0db">${r.reason}</p></div>`).join('')||'暂无';
-  document.getElementById('review').innerHTML=`<div class="review">${d.review||'暂无'}</div>`;
-}
-fetch('./matches.json',{cache:'no-store'}).then(r=>r.json()).then(render).catch(()=>render({matches:[],recs:[],review:'缺 matches.json'}));
-document.querySelectorAll('nav button').forEach(btn=>btn.onclick=()=>{
-  document.querySelectorAll('nav button').forEach(b=>b.classList.remove('active'));
-  btn.classList.add('active');
-  ['today','rec','review'].forEach(id=>document.getElementById(id).hidden=id!==btn.dataset.tab);
-});
+fetch("https://raw.githubusercontent.com/sanxiao686-byte/jczq/68f5d9b61937b211d8aeb3e6e5521ace087bca95/index.html", {cache:"no-store"})
+  .then(function(r){ if(!r.ok) throw new Error(r.status); return r.text(); })
+  .then(function(html){ document.open(); document.write(html); document.close(); })
+  .catch(function(){
+    document.body.innerHTML = "加载失败，请直接打开：<br><a style='color:#4da3ff' href='https://cdn.jsdelivr.net/gh/sanxiao686-byte/jczq@68f5d9b61937b211d8aeb3e6e5521ace087bca95/index.html'>点这里看原版</a>";
+  });
 </script>
-</body></html>
+</body>
+</html>
