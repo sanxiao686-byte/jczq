@@ -11,9 +11,13 @@
       if (ex.away_rank != null) m.away_rank = ex.away_rank;
     });
   }
-  Promise.all([0, 1, 2].map(function (i) {
-    return fetch("./e" + i + ".json?v=20", { cache: "no-store" }).then(function (r) { return r.ok ? r.json() : []; }).catch(function () { return []; });
-  })).then(function (parts) {
+  function loadE(i) {
+    return fetch("./e" + i + ".json?v=30", { cache: "no-store" }).then(function (r) {
+      if (!r.ok) return [];
+      return r.text().then(function (t) { try { return JSON.parse(t); } catch (e) { return []; } });
+    }).catch(function () { return []; });
+  }
+  Promise.all([loadE(0), loadE(1), loadE(2)]).then(function (parts) {
     merge(parts.reduce(function (a, b) { return a.concat(b || []); }, []));
     if (typeof render === "function" && DATA.matches && DATA.matches.length) render();
   });
