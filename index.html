@@ -1,82 +1,77 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>竞彩足球 · 数据台</title>
-  <style>
-    :root { --bg:#0f1419; --card:#1a222c; --line:#2a3542; --red:#c62828; --gold:#d4a017; --text:#e8eef4; --muted:#8b9aab; --win:#e53935; --draw:#f9a825; --lose:#1e88e5; }
-    * { box-sizing: border-box; }
-    body { margin:0; font-family:"PingFang SC","Microsoft YaHei",sans-serif; background:var(--bg); color:var(--text); }
-    header { background:linear-gradient(90deg,#8b1515,#c62828 40%,#1a222c); padding:16px 20px; display:flex; justify-content:space-between; align-items:baseline; flex-wrap:wrap; gap:8px; }
-    header h1 { margin:0; font-size:20px; }
-    header .meta { color:#ffd7d7; font-size:13px; }
-    nav { display:flex; gap:8px; padding:10px 16px; background:#151b22; border-bottom:1px solid var(--line); position:sticky; top:0; }
-    nav button { background:transparent; border:1px solid var(--line); color:var(--text); padding:6px 12px; border-radius:4px; }
-    nav button.active { background:var(--red); border-color:var(--red); }
-    main { max-width:1200px; margin:0 auto; padding:16px; }
-    .hint { background:#243044; border-left:3px solid var(--gold); padding:10px 12px; font-size:13px; margin-bottom:14px; }
-    .card { background:var(--card); border:1px solid var(--line); border-radius:8px; margin-bottom:14px; overflow:hidden; }
-    .card h2 { margin:0; padding:10px 14px; font-size:15px; background:#222b36; border-bottom:1px solid var(--line); }
-    table { width:100%; border-collapse:collapse; font-size:13px; }
-    th,td { padding:8px 10px; border-bottom:1px solid var(--line); text-align:left; }
-    th { color:var(--muted); background:#182028; }
-    .w { color:var(--win); } .d { color:var(--draw); } .l { color:var(--lose); }
-    .rec { padding:12px 14px; border-bottom:1px solid var(--line); }
-    .rec .code { color:var(--gold); font-weight:700; margin-right:8px; }
-    .rec .pick { color:#ff8a80; font-weight:700; }
-    .review { padding:12px 14px; color:#c5d0db; font-size:13px; line-height:1.6; }
-    footer { text-align:center; color:var(--muted); font-size:12px; padding:24px; }
-  </style>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>竞彩足球 · 25维数据台</title>
+<style>
+:root{--bg:#0e1320;--card:#182136;--line:#26324d;--txt:#e8edf6;--muted:#8b98b5;--gold:#f5b942;--win:#ff5a5f;--draw:#f5b942;--lose:#4da3ff}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--txt);font-family:-apple-system,"Microsoft YaHei",sans-serif;font-size:14px}
+header{background:linear-gradient(180deg,#141b2e,#101727);padding:12px 16px;border-bottom:1px solid var(--line);position:sticky;top:0}
+h1{font-size:17px}
+.meta{color:var(--muted);font-size:12px;margin-top:4px}
+nav{display:flex;gap:6px;padding:8px 16px;background:#131a2a}
+nav button{background:none;border:none;color:var(--muted);padding:8px 12px;font-weight:600}
+nav button.active{color:var(--txt);border-bottom:2px solid var(--gold)}
+main{max-width:1080px;margin:0 auto;padding:14px}
+.hint{background:#1e2940;border-left:3px solid var(--gold);padding:10px;margin-bottom:12px;font-size:13px;color:#c5d0db}
+.match{background:var(--card);border:1px solid var(--line);border-radius:10px;margin-bottom:12px;overflow:hidden}
+.head{padding:12px;cursor:pointer;display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+.tag{background:#23314f;color:#9fb2d8;font-size:11px;padding:2px 7px;border-radius:5px}
+.teams{font-weight:700;flex:1}
+.odds span{margin-right:8px}
+.w{color:var(--win)}
+.d{color:var(--draw)}
+.l{color:var(--lose)}
+.panel{display:none;border-top:1px solid var(--line);padding:10px 12px}
+.match.open .panel{display:block}
+.dim{display:flex;gap:8px;padding:6px 0;border-bottom:1px dashed #26324d;font-size:13px}
+.dim .n{min-width:130px;color:var(--gold)}
+.dim .s{min-width:52px;color:var(--muted)}
+.rec,.review{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:12px;margin-bottom:10px}
+footer{text-align:center;color:var(--muted);padding:20px;font-size:12px}
+</style>
 </head>
 <body>
-  <header>
-    <h1>竞彩足球 · 数据台</h1>
-    <div class="meta">个人分析用 · 非购彩通道 · <span id="updated">—</span></div>
-  </header>
-  <nav>
-    <button class="active" data-tab="today">今日全场次</button>
-    <button data-tab="rec">今日推荐</button>
-    <button data-tab="review">昨日复盘</button>
-  </nav>
-  <main>
-    <div class="hint">每日更新：昨日复盘 + 今日全部开售场次。凯利/必发没有公开数据标「待补」。</div>
-    <section id="today" class="card">
-      <h2>今日开售 · 全部场次</h2>
-      <div style="overflow-x:auto"><table>
-        <thead><tr><th>编号</th><th>联赛</th><th>开赛</th><th>对阵</th><th>欧赔 胜/平/负</th><th>让球</th><th>凯利</th><th>倾向</th></tr></thead>
-        <tbody id="match-body"></tbody>
-      </table></div>
-    </section>
-    <section id="rec" class="card" hidden>
-      <h2>今日推荐</h2>
-      <div id="rec-body"></div>
-    </section>
-    <section id="review" class="card" hidden>
-      <h2>昨日复盘</h2>
-      <div id="review-body" class="review"></div>
-    </section>
-  </main>
-  <footer>仅作个人赛事数据整理与逻辑展示，不提供购彩或代购。</footer>
-  <script>
-    function render(data) {
-      document.getElementById("updated").textContent = data.updated || "";
-      document.getElementById("match-body").innerHTML = (data.matches || []).map(m =>
-        `<tr><td>${m.code}</td><td>${m.league}</td><td>${m.time}</td><td>${m.home} vs ${m.away}</td><td><span class="w">${m.eu[0]}</span> <span class="d">${m.eu[1]}</span> <span class="l">${m.eu[2]}</span></td><td>${m.handicap||"-"}</td><td>${(m.kelly||[]).join(" / ")}</td><td>${m.lean||"-"}</td></tr>`
-      ).join("") || "<tr><td colspan=8>暂无场次</td></tr>";
-      document.getElementById("rec-body").innerHTML = (data.recs || []).map(r =>
-        `<div class="rec"><div><span class="code">${r.code}</span><span class="pick">${r.pick}</span></div><p>${r.reason}</p></div>`
-      ).join("") || "<div class=rec>暂无推荐</div>";
-      document.getElementById("review-body").textContent = data.review || "暂无复盘";
-    }
-    fetch("./matches.json", { cache: "no-store" }).then(r => r.ok ? r.json() : Promise.reject()).then(render).catch(() => render({updated:"无 matches.json",matches:[],recs:[],review:""}));
-    document.querySelectorAll("nav button").forEach(btn => {
-      btn.onclick = () => {
-        document.querySelectorAll("nav button").forEach(b => b.classList.remove("active"));
-        btn.classList.add("active");
-        ["today","rec","review"].forEach(id => { document.getElementById(id).hidden = id !== btn.dataset.tab; });
-      };
-    });
-  </script>
-</body>
-</html>
+<header>
+<h1>竞彩足球 · 25维数据台</h1>
+<div class="meta">点开每场可看基本面 / 交锋 / 近6场 / 赔率等 25 维 · <span id="upd"></span></div>
+</header>
+<nav>
+<button class="active" data-tab="today">今日全场次</button>
+<button data-tab="rec">今日推荐</button>
+<button data-tab="review">昨日复盘</button>
+</nav>
+<main>
+<div class="hint">旧版 25 维界面已从历史恢复结构。没有公开账本的维度标「数据不足/待补」，不编造必发和凯利。</div>
+<section id="today"></section>
+<section id="rec" hidden></section>
+<section id="review" hidden></section>
+</main>
+<footer>仅作个人赛事整理，不提供购彩。完整旧页备份在 commit 68f5d9b。</footer>
+<script>
+function render(d){
+  document.getElementById('upd').textContent=d.updated||'';
+  document.getElementById('today').innerHTML=(d.matches||[]).map((m,i)=>`
+    <div class="match" onclick="this.classList.toggle('open')">
+      <div class="head">
+        <span class="tag">${m.code}</span><span class="tag">${m.league||''}</span>
+        <span class="teams">${m.home} vs ${m.away}</span>
+        <span class="odds"><span class="w">${(m.eu||[])[0]||'-'}</span><span class="d">${(m.eu||[])[1]||'-'}</span><span class="l">${(m.eu||[])[2]||'-'}</span></span>
+        <span class="tag">${m.handicap||''}</span>
+        <span>${m.lean||''}</span>
+      </div>
+      <div class="panel">${(m.dims||[]).map(x=>`<div class="dim"><div class="n">${x.id}. ${x.name}</div><div class="s">${x.status}</div><div>${x.value||'—'}</div></div>`).join('')||'<div class="dim">无维度</div>'}</div>
+    </div>`).join('');
+  document.getElementById('rec').innerHTML=(d.recs||[]).map(r=>`<div class="rec"><b style="color:var(--gold)">${r.code}</b> ${r.pick}<p style="margin-top:6px;color:#c5d0db">${r.reason}</p></div>`).join('')||'暂无';
+  document.getElementById('review').innerHTML=`<div class="review">${d.review||'暂无'}</div>`;
+}
+fetch('./matches.json',{cache:'no-store'}).then(r=>r.json()).then(render).catch(()=>render({matches:[],recs:[],review:'缺 matches.json'}));
+document.querySelectorAll('nav button').forEach(btn=>btn.onclick=()=>{
+  document.querySelectorAll('nav button').forEach(b=>b.classList.remove('active'));
+  btn.classList.add('active');
+  ['today','rec','review'].forEach(id=>document.getElementById(id).hidden=id!==btn.dataset.tab);
+});
+</script>
+</body></html>
