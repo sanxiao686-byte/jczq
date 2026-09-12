@@ -70,6 +70,59 @@ function cell(code, play, opt, label, odds, cls) {
   if (!odds || odds === "—" || odds === "未开") return "";
   return '<div class="qcell" onclick="toggleBet(this,\'' + code + '\',\'' + play + '\',\'' + opt + '\',\'' + label + '\',\'' + odds + '\')"><div class="l">' + label + '</div><div class="v ' + cls + '">' + esc(odds) + "</div></div>";
 }
+if (typeof REAL_ODDS === "undefined") var REAL_ODDS = {};
+if (typeof JC_LIVE === "undefined") var JC_LIVE = {};
+function fillOdds(m) {
+  if (!m) return m;
+  var pack = REAL_ODDS[m.code] || {};
+  var euro = (pack.euro || []).slice();
+  var jc = JC_LIVE[m.code];
+  if (jc && !euro.some(function (r) { return r.co === "竞彩官方"; })) {
+    euro.unshift({ co: "竞彩官方", i: jc, n: jc, k: "—", src: "500网" });
+  }
+  if (!euro.length && m.spf && m.spf.win && m.spf.win !== "—" && m.spf.win !== "未开") {
+    euro.push({ co: "竞彩官方", i: m.spf.win + "/" + m.spf.draw + "/" + m.spf.lose, n: m.spf.win + "/" + m.spf.draw + "/" + m.spf.lose, k: "—", src: "500网" });
+  }
+  m.euroRows = euro;
+  m.ahRows = pack.ah || [];
+  m.ouRows = pack.ou || [];
+  m.bifa = pack.bifa || null;
+  m.xg = pack.xg || null;
+  return m;
+}
+function euroBlock(m) {
+  fillOdds(m);
+  var rows = m.euroRows || [];
+  if (!rows.length) return '<div class="sect"><h3>欧盘</h3><div class="muted">本场尚未抓到欧赔公司盘（竞彩官方见上栏）。来源：500网 / 澳客。</div></div>';
+  return '<div class="sect"><h3>欧盘 + 凯利 <span class="muted">澳客凯利页实盘 2026-09-12</span></h3><table class="odds-tb"><thead><tr><th>公司</th><th>初盘 胜/平/负</th><th>即时 胜/平/负</th><th>凯利 胜/平/负</th><th>来源</th></tr></thead><tbody>' +
+    rows.map(function (r) {
+      return "<tr><td>" + esc(r.co) + "</td><td>" + esc(r.i || "—") + '</td><td class="hl">' + esc(r.n || "—") + "</td><td>" + esc(r.k || "—") + "</td><td>" + esc(r.src || "") + "</td></tr>";
+    }).join("") + "</tbody></table></div>";
+}
+function ahBlock(m) {
+  fillOdds(m);
+  var html = "";
+  if (m.ahRows && m.ahRows.length) {
+    html += '<div class="sect"><h3>亚盘让球 <span class="muted">澳客盘口评测实盘</span></h3><table class="odds-tb"><thead><tr><th>公司</th><th>初盘</th><th>即时</th></tr></thead><tbody>' +
+      m.ahRows.map(function (r) {
+        return "<tr><td>" + esc(r.co) + "</td><td>" + esc(r.i || "—") + '</td><td class="hl">' + esc(r.n || r.i || "—") + "</td></tr>";
+      }).join("") + "</tbody></table></div>";
+  } else {
+    html += '<div class="sect"><h3>亚盘让球</h3><div class="muted">本场亚盘公司盘还在补抓。竞彩让球见上栏让球一行。</div></div>';
+  }
+  if (m.bifa) {
+    html += '<div class="sect"><h3>必发成交</h3><div class="summary-bar">总额 ' + esc(m.bifa.vol) +
+      " · 主成交 " + esc(m.bifa.home) + " · 平成交 " + esc(m.bifa.draw) + " · 客成交 " + esc(m.bifa.away);
+    if (m.bifa.odds) html += " · 必发赔率 " + esc(m.bifa.odds);
+    if (m.bifa.ratio) html += " · 比例 " + esc(m.bifa.ratio);
+    html += ' <span class="muted">来源 ' + esc(m.bifa.src || "澳客必发") + "</span></div></div>";
+  }
+  if (m.xg) {
+    html += '<div class="sect"><h3>xG</h3><div class="summary-bar">主 ' + esc(m.xg.home) + " · 客 " + esc(m.xg.away) +
+      ' <span class="muted">' + esc(m.xg.note || "") + "</span></div></div>";
+  }
+  return html;
+}
 function playsBlock(m) {
   var p = m.plays || {};
   var html = "";
@@ -150,8 +203,9 @@ function recBlock(m) {
 }
 function openBase(code) {
   var m = findMatch(code); if (!m) return;
-  var content = standingsBlock(m.standings, m) + '<div class="sect"><h3>交战记录</h3>' + h2hBlock(m.h2h) + '</div><div class="sect"><h3>近6场</h3>' + formBlock(m.form) + "</div>";
-  var css = "<style>body{background:#0e1320;color:#e8edf6;font-family:-apple-system,'Microsoft YaHei',sans-serif;font-size:14px;margin:0;padding:22px}.wrap{max-width:1000px;margin:0 auto}h1{font-size:18px;color:#f5b942;margin:0 0 4px}.sub{color:#8b98b5;font-size:12px;margin-bottom:18px}.sect{margin-bottom:22px}.sect h3{font-size:14px;color:#f5b942;margin-bottom:10px}table{width:100%;border-collapse:collapse;font-size:12.5px}th,td{padding:6px 8px;text-align:center;border-bottom:1px solid #26324d}th{color:#8b98b5;background:#141b2e}td.hl{color:#f5b942;font-weight:700}.chip{display:inline-block;font-size:11px;padding:1px 8px;border-radius:20px;font-weight:600}.chip.win{background:rgba(255,90,95,.15);color:#ff5a5f}.chip.draw{background:rgba(46,194,126,.15);color:#2ec27e}.chip.lose{background:rgba(77,163,255,.15);color:#4da3ff}.summary-bar{background:#0d1322;border:1px solid #26324d;border-radius:8px;padding:10px 14px;margin-bottom:10px}.muted{color:#8b98b5;font-size:12px}</style>";
+  fillOdds(m);
+  var content = euroBlock(m) + ahBlock(m) + standingsBlock(m.standings, m) + '<div class="sect"><h3>交战记录</h3>' + h2hBlock(m.h2h) + '</div><div class="sect"><h3>近6场</h3>' + formBlock(m.form) + "</div>";
+  var css = "<style>body{background:#0e1320;color:#e8edf6;font-family:-apple-system,'Microsoft YaHei',sans-serif;font-size:14px;margin:0;padding:22px}.wrap{max-width:1000px;margin:0 auto}h1{font-size:18px;color:#f5b942;margin:0 0 4px}.sub{color:#8b98b5;font-size:12px;margin-bottom:18px}.sect{margin-bottom:22px}.sect h3{font-size:14px;color:#f5b942;margin-bottom:10px}table{width:100%;border-collapse:collapse;font-size:12.5px}th,td{padding:6px 8px;text-align:center;border-bottom:1px solid #26324d}th{color:#8b98b5;background:#141b2e}td.hl{color:#f5b942;font-weight:700}.chip{display:inline-block;font-size:11px;padding:1px 8px;border-radius:20px;font-weight:600}.chip.win{background:rgba(255,90,95,.15);color:#ff5a5f}.chip.draw{background:rgba(46,194,126,.15);color:#2ec27e}.chip.lose{background:rgba(77,163,255,.15);color:#4da3ff}.summary-bar{background:#0d1322;border:1px solid #26324d;border-radius:8px;padding:10px 14px;margin-bottom:10px}.muted{color:#8b98b5;font-size:12px}.odds-tb{width:100%;border-collapse:collapse}</style>";
   var html = "<!DOCTYPE html><html><head><meta charset=utf-8><meta name=viewport content='width=device-width,initial-scale=1'><title>" + esc(m.home) + " vs " + esc(m.away) + " · 基本面</title>" + css + "</head><body><div class=wrap><h1>" + esc(m.home) + " <span style=color:#8b98b5>vs</span> " + esc(m.away) + "</h1><div class=sub>" + esc(m.code || "") + " · " + esc(m.league || "") + " · 赛前基本面</div>" + content + "</div></body></html>";
   var w = window.open("", "_blank", "width=980,height=820");
   if (!w) { alert("浏览器拦截了弹窗，请允许本站弹窗后重试"); return; }
@@ -180,6 +234,7 @@ function matchCard(m) {
     '<div class="match-body">' + recBlock(m) +
     '<div class="plays-area">' + playsBlock(m) + "</div>" +
     '<div class="tabpane active" style="display:block;padding:16px">' +
+    euroBlock(m) + ahBlock(m) +
     standingsBlock(m.standings, m) +
     '<div class="sect"><h3>交战记录</h3>' + h2hBlock(m.h2h) + "</div>" +
     '<div class="sect"><h3>近6场</h3>' + formBlock(m.form) + "</div>" +
@@ -198,6 +253,7 @@ function render() {
   listAll.forEach(function (m) { var l = m.league || "其他"; if (l && leagues.indexOf(l) < 0) leagues.push(l); });
   document.getElementById("league-filter").innerHTML = '<button class="' + (curLeague === "all" ? "active" : "") + "\" onclick=\"filterLeague('all')\">全部</button>" +
     leagues.map(function (l) { return '<button class="' + (curLeague === l ? "active" : "") + "\" onclick=\"filterLeague('" + l + "')\">" + esc(l) + "</button>"; }).join("");
+  listAll.forEach(fillOdds);
   document.getElementById("app").innerHTML = list.map(matchCard).join("") || '<div class="empty">暂无赛程</div>';
   var h = "";
   (d.reports || []).forEach(function (r) {
@@ -214,22 +270,9 @@ function render() {
   renderSlip();
 }
 function boot() {
-  if (window._PACK && window._PACK.length) {
-    var packs = window._PACK.slice().sort(function (a, b) { return (a.i || 0) - (b.i || 0); });
-    DATA = {
-      generated_at: (packs[0] && packs[0].generated_at) || "",
-      matches: packs.reduce(function (a, p) { return a.concat(p.matches || []); }, []),
-      reports: (packs[0] && packs[0].reports) || [],
-      reviews: (packs[0] && packs[0].reviews) || []
-    };
-    DATA.count = DATA.matches.length;
-    window.DATA = DATA;
-    render();
-    return;
-  }
   if (DATA && DATA.matches && DATA.matches.length) { window.DATA = DATA; render(); return; }
   Promise.all([0, 1, 2].map(function (i) {
-    return fetch("./m" + i + ".json?v=32", { cache: "no-store" }).then(function (r) {
+    return fetch("./m" + i + ".json?v=35", { cache: "no-store" }).then(function (r) {
       if (!r.ok) return null;
       return r.text().then(function (t) { try { return JSON.parse(t); } catch (e) { return null; } });
     }).catch(function () { return null; });
