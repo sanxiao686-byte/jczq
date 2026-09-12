@@ -2,9 +2,23 @@
 <html lang="zh-CN">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
 <title>竞彩足球 · 个人数据台</title>
-<link rel="stylesheet" href="./style.css">
+<link rel="stylesheet" href="./style.css?v=20">
+<style>
+.teams .jx, a.jx {
+  display:inline-flex !important;
+  align-items:center; justify-content:center;
+  width:22px; height:22px;
+  border:1px solid #f5b942 !important;
+  background:#f5b942 !important;
+  color:#141b2e !important;
+  border-radius:4px; font-size:13px; font-weight:800;
+  text-decoration:none !important; line-height:1; flex:none;
+}
+.teams .n .rk { color:#8b98b5; font-size:11px; font-weight:600; margin:0 3px; }
+</style>
 </head>
 <body>
 <header>
@@ -23,10 +37,10 @@
 <div class="wrap">
   <div id="view-schedule" class="view active">
     <div class="legend">
-      <span><span class="dot" style="background:var(--red)"></span>主胜/上盘/大球</span>
-      <span><span class="dot" style="background:var(--green)"></span>平局/下盘/小球</span>
-      <span><span class="dot" style="background:var(--blue)"></span>客胜</span>
-      <span><span class="dot" style="background:var(--gold)"></span>盘口/关键值</span>
+      <span><span class="dot" style="background:#ff5a5f"></span>主胜/上盘/大球</span>
+      <span><span class="dot" style="background:#2ec27e"></span>平局/下盘/小球</span>
+      <span><span class="dot" style="background:#4da3ff"></span>客胜</span>
+      <span><span class="dot" style="background:#f5b942"></span>盘口/关键值</span>
     </div>
     <div id="league-filter" class="lfilter"></div>
     <div id="app"></div>
@@ -36,8 +50,8 @@
     <div id="rv-app"></div>
   </div>
 </div>
-<script src="./app.js"></script>
-<script src="./jx.js"></script>
+<script src="./data.js?v=20"></script>
+<script src="./app.js?v=20"></script>
 <div id="betslip" class="betslip" style="display:none">
   <div class="bs-head">
     <span>已选 <b id="bs-count">0</b> 场</span>
@@ -46,7 +60,7 @@
     <span>最高奖金：<b id="bs-win" class="bs-win">¥0.00</b></span>
     <button class="bs-btn" onclick="copySlip()">复制</button>
     <button class="bs-btn" onclick="saveSlip();alert('已保存')">保存</button>
-    <button style="background:var(--red);color:#fff;border:none;border-radius:6px;padding:5px 12px;cursor:pointer" onclick="clearSlip()">清空</button>
+    <button style="background:#ff5a5f;color:#fff;border:none;border-radius:6px;padding:5px 12px;cursor:pointer" onclick="clearSlip()">清空</button>
   </div>
   <div id="bs-list" class="bs-list"></div>
   <div id="bs-detail"></div>
