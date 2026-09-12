@@ -5,15 +5,27 @@
 <meta name="viewport" content="width=device-width,initial-scale=1"/>
 <title>竞彩足球</title>
 </head>
-<body style="background:#0e1320;color:#e8edf6;font-family:sans-serif;padding:24px">
-正在打开原版页面…
+<body style="margin:0;background:#0e1320;color:#e8edf6;font-family:sans-serif">
+<p style="padding:24px">正在打开原版（胜平负/让球/总进球/半全场、交锋、近6场）…</p>
 <script>
-fetch("https://raw.githubusercontent.com/sanxiao686-byte/jczq/68f5d9b61937b211d8aeb3e6e5521ace087bca95/index.html", {cache:"no-store"})
-  .then(function(r){ if(!r.ok) throw new Error(r.status); return r.text(); })
-  .then(function(html){ document.open(); document.write(html); document.close(); })
-  .catch(function(){
-    document.body.innerHTML = "加载失败，请直接打开：<br><a style='color:#4da3ff' href='https://cdn.jsdelivr.net/gh/sanxiao686-byte/jczq@68f5d9b61937b211d8aeb3e6e5521ace087bca95/index.html'>点这里看原版</a>";
-  });
+(function(){
+  var urls = [
+    "https://cdn.jsdelivr.net/gh/sanxiao686-byte/jczq@68f5d9b61937b211d8aeb3e6e5521ace087bca95/index.html",
+    "https://raw.githubusercontent.com/sanxiao686-byte/jczq/68f5d9b61937b211d8aeb3e6e5521ace087bca95/index.html"
+  ];
+  function load(i){
+    if(i>=urls.length){
+      document.body.innerHTML = '<p style="padding:24px">请直接打开原版：<br><a style="color:#4da3ff" href="'+urls[0]+'">'+urls[0]+'</a></p>';
+      return;
+    }
+    fetch(urls[i], {cache:"no-store"}).then(function(r){
+      if(!r.ok) throw new Error();
+      return r.text();
+    }).then(function(html){
+      document.open(); document.write(html); document.close();
+    }).catch(function(){ load(i+1); });
+  }
+  load(0);
+})();
 </script>
-</body>
-</html>
+</body></html>
