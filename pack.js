@@ -9,5 +9,6 @@
   };
   packs.forEach(function (p) { d.matches = d.matches.concat(p.matches || []); });
   d.count = d.matches.length;
+  if (d.matches.length < 30) return;
   window.DATA = d;
 })();
