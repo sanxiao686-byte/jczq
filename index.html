@@ -22,9 +22,6 @@
 .odds-tb th,.odds-tb td{padding:6px 8px;text-align:center;border-bottom:1px solid #26324d}
 .odds-tb th{color:#8b98b5;background:#141b2e}
 .odds-tb td.hl{color:#f5b942;font-weight:700}
-.odds-tb td.win{color:#ff5a5f}
-.odds-tb td.draw{color:#2ec27e}
-.odds-tb td.lose{color:#4da3ff}
 </style>
 </head>
 <body>
@@ -57,6 +54,7 @@
     <div id="rv-app"></div>
   </div>
 </div>
+<script src="./odds.js?v=35"></script>
 <script src="./app.js?v=35"></script>
 <script src="./jx.js?v=35"></script>
 <div id="betslip" class="betslip" style="display:none">
@@ -70,7 +68,6 @@
     <button style="background:#ff5a5f;color:#fff;border:none;border-radius:6px;padding:5px 12px;cursor:pointer" onclick="clearSlip()">清空</button>
   </div>
   <div id="bs-list" class="bs-list"></div>
-  <div id="bs-detail"></div>
 </div>
 </body>
 </html>
