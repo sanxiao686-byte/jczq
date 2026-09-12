@@ -1,1 +1,1 @@
-v38 500 XML odds live 2026-09-12
+v39 odds 001-005 pushed, rest next
