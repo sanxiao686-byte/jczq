@@ -13,7 +13,7 @@
     });
   }
   function loadE(i) {
-    return fetch("./e" + i + ".json?v=43", { cache: "no-store" }).then(function (r) {
+    return fetch("./e" + i + ".json?v=44", { cache: "no-store" }).then(function (r) {
       if (!r.ok) return [];
       return r.text().then(function (t) { try { return JSON.parse(t); } catch (e) { return []; } });
     }).catch(function () { return []; });
@@ -22,6 +22,10 @@
   function apply() {
     if (!window.DATA || !DATA.matches || !DATA.matches.length) return false;
     merge(extras);
+    var pack = window.FORM_PACK || {};
+    DATA.matches.forEach(function (m) {
+      if (pack[m.code]) m.form = pack[m.code];
+    });
     if (typeof render === "function") render();
     return true;
   }
