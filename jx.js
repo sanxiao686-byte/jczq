@@ -24,9 +24,11 @@
     merge(extras);
     var pack = window.FORM_PACK || {};
     var h2h = window.H2H_PACK || {};
+    var plays = window.PLAY_PACK || {};
     DATA.matches.forEach(function (m) {
       if (pack[m.code]) m.form = pack[m.code];
       if (h2h[m.code]) m.h2h = h2h[m.code];
+      if (plays[m.code]) m.plays = plays[m.code];
     });
     if (typeof render === "function") render();
     return true;
