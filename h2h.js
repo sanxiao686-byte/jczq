@@ -1,0 +1,1 @@
+window.H2H_PACK=Object.assign(window.H2H_PACK||{},{"周日001":{"summary":"双方近2次交战，东京绿茵 1胜0平1负，进3球失3球 · 500网球队赛程","rows":[{"date":"2026-04-18","league":"日职","home":"东京绿茵","score":"1:0","away":"千叶市原","half":"0:0","hcap":"赢","result":"胜"},{"date":"2026-04-04","league":"日职","home":"千叶市原","score":"3:2","away":"东京绿茵","half":"2:0","hcap":"输","result":"负"}],"src":"500网 teamfixture"}});
