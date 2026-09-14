@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+<title>竞彩足球 · 个人数据台</title>
+<link rel="stylesheet" href="./style.css?v=49">
+<style>
+.teams .jx, a.jx {
+  display:inline-flex !important;
+  align-items:center; justify-content:center;
+  width:22px; height:22px;
+  border:1px solid #f5b942 !important;
+  background:#f5b942 !important;
+  color:#141b2e !important;
+  border-radius:4px; font-size:13px; font-weight:800;
+  text-decoration:none !important; line-height:1; flex:none;
+}
+.teams .n .rk { color:#8b98b5; font-size:11px; font-weight:600; margin:0 3px; }
+.odds-tb{width:100%;border-collapse:collapse;font-size:12.5px;margin-top:6px}
+.odds-tb th,.odds-tb td{padding:6px 8px;text-align:center;border-bottom:1px solid #26324d}
+.odds-tb th{color:#8b98b5;background:#141b2e}
+.odds-tb td.hl{color:#f5b942;font-weight:700}
+</style>
+</head>
+<body>
+<header>
+  <div class="top">
+    <div class="brand">
+      <div class="logo">竞</div>
+      <div><h1>竞彩足球 · 数据台 <span class="sub">个人用</span></h1></div>
+    </div>
+    <div class="meta">更新时间 <b id="upd"></b> · <span id="cnt"></span></div>
+  </div>
+  <nav>
+    <button id="nav-schedule" class="active" onclick="switchView('schedule')">赛程</button>
+    <button id="nav-review" onclick="switchView('review')">复盘 · 推荐</button>
+  </nav>
+</header>
+<div class="wrap">
+  <div id="view-schedule" class="view active">
+    <div class="legend">
+      <span><span class="dot" style="background:#ff5a5f"></span>主胜/上盘/大球</span>
+      <span><span class="dot" style="background:#2ec27e"></span>平局/下盘/小球</span>
+      <span><span class="dot" style="background:#4da3ff"></span>客胜</span>
+      <span><span class="dot" style="background:#f5b942"></span>盘口/关键值</span>
+    </div>
+    <div id="league-filter" class="lfilter"></div>
+    <div id="app"></div>
+  </div>
+  <div id="view-review" class="view">
+    <div class="muted" style="margin-bottom:14px">每日推荐与复盘</div>
+    <div id="rv-app"></div>
+  </div>
+</div>
+<script src="./odds0.js?v=49"></script>
+<script src="./odds1.js?v=49"></script>
+<script src="./odds2.js?v=49"></script>
+<script src="./odds.js?v=49"></script>
+<script src="./app.js?v=49"></script>
+<script src="./app_plays.js?v=49"></script>
+<script src="./f0.js?v=49"></script>
+<script src="./f0b.js?v=49"></script>
+<script src="./f1.js?v=49"></script>
+<script src="./f1b.js?v=49"></script>
+<script src="./f2.js?v=49"></script>
+<script src="./h2h.js?v=49"></script>
+<script src="./h2ha.js?v=49"></script>
+<script src="./h2hb.js?v=49"></script>
+<script src="./plays0.js?v=49"></script>
+<script src="./plays1.js?v=49"></script>
+<script src="./jx.js?v=49"></script>
+<div id="betslip" class="betslip" style="display:none">
+  <div class="bs-head">
+    <span>已选 <b id="bs-count">0</b> 场</span>
+    <span>过关：<select id="bs-mode" onchange="renderSlip()"><option value="n1">N串1（全中）</option><option value="single">单关（单注）</option></select></span>
+    <span>倍数：<input id="bs-mul" type="number" min="1" value="1" oninput="renderSlip()"></span>
+    <span>最高奖金：<b id="bs-win" class="bs-win">¥0.00</b></span>
+    <button class="bs-btn" onclick="copySlip()">复制</button>
+    <button class="bs-btn" onclick="saveSlip();alert('已保存')">保存</button>
+    <button style="background:#ff5a5f;color:#fff;border:none;border-radius:6px;padding:5px 12px;cursor:pointer" onclick="clearSlip()">清空</button>
+  </div>
+  <div id="bs-list" class="bs-list"></div>
+</div>
+</body>
+</html>
