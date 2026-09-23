@@ -1,1 +1,1 @@
-window.FORM_PACK=Object.assign(window.FORM_PACK||{},{});
+window.FORM_PACK=window.FORM_PACK||{};
