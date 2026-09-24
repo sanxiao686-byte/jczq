@@ -1,1 +1,1 @@
-window.RO2={};
+{{FILE:/tmp/odds2.js}}

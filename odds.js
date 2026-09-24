@@ -1,1 +1,1 @@
-window.REAL_ODDS=Object.assign({},window.RO0||{},window.RO1||{},window.RO2||{},window.REAL_ODDS||{});
+{{FILE:/tmp/odds.js}}
