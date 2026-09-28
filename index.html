@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
 <title>竞彩足球 · 个人数据台</title>
-<link rel="stylesheet" href="./style.css?v=50">
+<link rel="stylesheet" href="./style.css?v=51">
 <style>
 .teams .jx, a.jx {
   display:inline-flex !important;
@@ -24,7 +24,7 @@
 .odds-tb td.hl{color:#f5b942;font-weight:700}
 </style>
 </head>
-<body>
+<body class="feed-on">
 <header>
   <div class="top">
     <div class="brand">
@@ -34,14 +34,18 @@
     <div class="meta">更新时间 <b id="upd"></b> · <span id="cnt"></span></div>
   </div>
   <nav>
-    <button id="nav-schedule" class="active" onclick="switchView('schedule')">赛程</button>
-    <button id="nav-review" onclick="switchView('review')">复盘 · 推荐</button>
-    <button id="nav-live" onclick="switchView('live')">直播中心</button>
+    <button id="nav-feed" class="active" onclick="switchView('feed')">竖屏</button>
+    <button id="nav-schedule" onclick="switchView('schedule')">赛程资料</button>
+    <button id="nav-review" onclick="switchView('review')">复盘</button>
+    <button id="nav-live" onclick="switchView('live')">直播位</button>
     <button id="nav-tips" onclick="switchView('tips')">付费推荐</button>
   </nav>
 </header>
 <div class="wrap">
-  <div id="view-schedule" class="view active">
+  <div id="view-feed" class="view active">
+    <div id="feed-rail"></div>
+  </div>
+  <div id="view-schedule" class="view">
     <div class="legend">
       <span><span class="dot" style="background:#ff5a5f"></span>主胜/上盘/大球</span>
       <span><span class="dot" style="background:#2ec27e"></span>平局/下盘/小球</span>
@@ -64,24 +68,25 @@
     <div id="tips-app"></div>
   </div>
 </div>
-<script src="./odds0.js?v=50"></script>
-<script src="./odds1.js?v=50"></script>
-<script src="./odds2.js?v=50"></script>
-<script src="./odds.js?v=50"></script>
-<script src="./app.js?v=50"></script>
-<script src="./app_plays.js?v=50"></script>
-<script src="./f0.js?v=50"></script>
-<script src="./f0b.js?v=50"></script>
-<script src="./f1.js?v=50"></script>
-<script src="./f1b.js?v=50"></script>
-<script src="./f2.js?v=50"></script>
-<script src="./h2h.js?v=50"></script>
-<script src="./h2ha.js?v=50"></script>
-<script src="./h2hb.js?v=50"></script>
-<script src="./plays0.js?v=50"></script>
-<script src="./plays1.js?v=50"></script>
-<script src="./jx.js?v=50"></script>
-<script src="./app_media.js?v=50"></script>
+<script src="./odds0.js?v=51"></script>
+<script src="./odds1.js?v=51"></script>
+<script src="./odds2.js?v=51"></script>
+<script src="./odds.js?v=51"></script>
+<script src="./app.js?v=51"></script>
+<script src="./app_plays.js?v=51"></script>
+<script src="./f0.js?v=51"></script>
+<script src="./f0b.js?v=51"></script>
+<script src="./f1.js?v=51"></script>
+<script src="./f1b.js?v=51"></script>
+<script src="./f2.js?v=51"></script>
+<script src="./h2h.js?v=51"></script>
+<script src="./h2ha.js?v=51"></script>
+<script src="./h2hb.js?v=51"></script>
+<script src="./plays0.js?v=51"></script>
+<script src="./plays1.js?v=51"></script>
+<script src="./jx.js?v=51"></script>
+<script src="./app_media.js?v=51"></script>
+<script src="./app_feed.js?v=51"></script>
 <div id="betslip" class="betslip" style="display:none">
   <div class="bs-head">
     <span>已选 <b id="bs-count">0</b> 场</span>
