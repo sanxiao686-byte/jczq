@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
 <title>竞彩足球 · 个人数据台</title>
-<link rel="stylesheet" href="./style.css?v=51">
+<link rel="stylesheet" href="./style.css?v=52">
 <style>
 .teams .jx, a.jx {
   display:inline-flex !important;
@@ -39,12 +39,13 @@
     <button id="nav-review" onclick="switchView('review')">复盘</button>
     <button id="nav-live" onclick="switchView('live')">直播位</button>
     <button id="nav-tips" onclick="switchView('tips')">付费推荐</button>
+    <button id="nav-all" onclick="switchView('all')">全部足球</button>
+    <button id="nav-bk" onclick="switchView('bk')">篮球</button>
+    <button id="nav-res" onclick="switchView('res')">赛果</button>
   </nav>
 </header>
 <div class="wrap">
-  <div id="view-feed" class="view active">
-    <div id="feed-rail"></div>
-  </div>
+  <div id="view-feed" class="view active"><div id="feed-rail"></div></div>
   <div id="view-schedule" class="view">
     <div class="legend">
       <span><span class="dot" style="background:#ff5a5f"></span>主胜/上盘/大球</span>
@@ -55,42 +56,38 @@
     <div id="league-filter" class="lfilter"></div>
     <div id="app"></div>
   </div>
-  <div id="view-review" class="view">
-    <div class="muted" style="margin-bottom:14px">每日推荐与复盘</div>
-    <div id="rv-app"></div>
-  </div>
-  <div id="view-live" class="view">
-    <div class="muted" style="margin-bottom:14px">每场比赛独立直播位 · 演示框架，可贴公开播放链接</div>
-    <div id="live-app"></div>
-  </div>
-  <div id="view-tips" class="view">
-    <div class="muted" style="margin-bottom:14px">付费推荐广场 · 注册玩家可发单 · 解锁为本地演示（不扣款）</div>
-    <div id="tips-app"></div>
-  </div>
+  <div id="view-review" class="view"><div class="muted" style="margin-bottom:14px">每日推荐与复盘</div><div id="rv-app"></div></div>
+  <div id="view-live" class="view"><div class="muted" style="margin-bottom:14px">每场直播位</div><div id="live-app"></div></div>
+  <div id="view-tips" class="view"><div class="muted" style="margin-bottom:14px">付费推荐广场</div><div id="tips-app"></div></div>
+  <div id="view-all" class="view"><div id="hub-all"></div></div>
+  <div id="view-bk" class="view"><div id="hub-bk"></div></div>
+  <div id="view-res" class="view"><div id="hub-res"></div></div>
 </div>
-<script src="./odds0.js?v=51"></script>
-<script src="./odds1.js?v=51"></script>
-<script src="./odds2.js?v=51"></script>
-<script src="./odds.js?v=51"></script>
-<script src="./app.js?v=51"></script>
-<script src="./app_plays.js?v=51"></script>
-<script src="./f0.js?v=51"></script>
-<script src="./f0b.js?v=51"></script>
-<script src="./f1.js?v=51"></script>
-<script src="./f1b.js?v=51"></script>
-<script src="./f2.js?v=51"></script>
-<script src="./h2h.js?v=51"></script>
-<script src="./h2ha.js?v=51"></script>
-<script src="./h2hb.js?v=51"></script>
-<script src="./plays0.js?v=51"></script>
-<script src="./plays1.js?v=51"></script>
-<script src="./jx.js?v=51"></script>
-<script src="./app_media.js?v=51"></script>
-<script src="./app_feed.js?v=51"></script>
+<script src="./odds0.js?v=52"></script>
+<script src="./odds1.js?v=52"></script>
+<script src="./odds2.js?v=52"></script>
+<script src="./odds.js?v=52"></script>
+<script src="./app.js?v=52"></script>
+<script src="./app_plays.js?v=52"></script>
+<script src="./f0.js?v=52"></script>
+<script src="./f0b.js?v=52"></script>
+<script src="./f1.js?v=52"></script>
+<script src="./f1b.js?v=52"></script>
+<script src="./f2.js?v=52"></script>
+<script src="./h2h.js?v=52"></script>
+<script src="./h2ha.js?v=52"></script>
+<script src="./h2hb.js?v=52"></script>
+<script src="./plays0.js?v=52"></script>
+<script src="./plays1.js?v=52"></script>
+<script src="./jx.js?v=52"></script>
+<script src="./app_media.js?v=52"></script>
+<script src="./app_feed.js?v=52"></script>
+<script src="./hub.js?v=52"></script>
+<script src="./app_hub.js?v=52"></script>
 <div id="betslip" class="betslip" style="display:none">
   <div class="bs-head">
     <span>已选 <b id="bs-count">0</b> 场</span>
-    <span>过关：<select id="bs-mode" onchange="renderSlip()"><option value="n1">N串1（全中）</option><option value="single">单关（单注）</option></select></span>
+    <span>过关：<select id="bs-mode" onchange="renderSlip()"><option value="n1">N串1</option><option value="single">单关</option></select></span>
     <span>倍数：<input id="bs-mul" type="number" min="1" value="1" oninput="renderSlip()"></span>
     <span>最高奖金：<b id="bs-win" class="bs-win">¥0.00</b></span>
     <button class="bs-btn" onclick="copySlip()">复制</button>
