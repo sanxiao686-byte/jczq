@@ -1,1 +1,1 @@
-{{FILE:/tmp/odds0.js}}
+PLACEHOLDER
