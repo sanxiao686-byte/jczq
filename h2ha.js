@@ -1,1 +1,1 @@
-window.H2H_PACK = Object.assign(window.H2H_PACK||{}, {"周三001":{"summary":"澳客 history 405；足彩网 bsls CloudWAF；500球队页近况表未出现双方对阵。无历史交锋可写入。","rows":[]},"周三002":{"summary":"澳客/足彩网交锋源失败。500球队页仅找到1场同系列对阵（友谊赛，客队页面记为日本U21）。","rows":[{"date":"2026-06-05","league":"友谊赛","home":"乌兹别克斯坦U23","score":"0:1","away":"日本U21","half":"0:1","result":"负"}]}});
+window.H2H_PACK = Object.assign(window.H2H_PACK||{}, {});
