@@ -1,14 +1,11 @@
 {
-  "generated_at": "2026-09-30 11:05:00",
-  "count": 2,
-  "matches": [
-    {"code": "周三001", "league": "亚运会男足", "home": "韩国亚运男足", "away": "中国亚运男足", "kickoff": "09-30 14:00", "fid": "166035", "aid": "2041789", "spf": {"3": "1.13", "1": "5.50", "0": "16.00"}, "rqspf": {"3": "1.59", "1": "3.66", "0": "4.40"}, "rq": "-1", "home_id": "1640", "away_id": "3947"},
-    {"code": "周三002", "league": "亚运会男足", "home": "乌兹别克亚运男足", "away": "日本亚运男足", "kickoff": "09-30 18:30", "fid": "166036", "aid": "2041790", "spf": {"3": "4.85", "1": "3.45", "0": "1.58"}, "rqspf": {"3": "2.05", "1": "3.30", "0": "2.95"}, "rq": "+1", "home_id": "4156", "away_id": "4143"}
-  ],
+  "generated_at": "2026-10-01 11:05:00",
+  "count": 0,
+  "matches": [],
   "reports": [],
   "reviews": [
-    {"code": "周二001", "league": "亚运会女足", "home": "朝鲜女足", "away": "中国女足", "kickoff": "09-29 14:00", "score": "2:0", "source": "彩票宝完场"},
-    {"code": "周二002", "league": "国际赛", "home": "澳大利亚", "away": "巴西", "kickoff": "09-29 18:00", "score": "2:4", "source": "彩票宝完场"},
-    {"code": "周二003", "league": "日本联赛杯", "home": "藤枝MYFC", "away": "大阪樱花", "kickoff": "09-29 18:00", "score": "1:2", "source": "彩票宝完场"}
-  ]
+    {"code": "周三001", "league": "亚运会男足", "home": "韩国亚运男足", "away": "中国亚运男足", "kickoff": "09-30 14:00", "score": "2:1", "source": "新华社/体坛周报完场"},
+    {"code": "周三002", "league": "亚运会男足", "home": "乌兹别克亚运男足", "away": "日本亚运男足", "kickoff": "09-30 18:30", "score": "1:1", "note": "90分钟1:1，加时1:1，点球日本10-9晋级", "source": "懂球帝/中國報完场"}
+  ],
+  "sale_note": "500 trade.500.com/static/public/jczq/xml/odds/odds.xml 2026-10-01 11:06:57 matches 空；trade.500.com/jczq/?playid=312 无 data-matchnum；澳客 jingcai 无周四场次。当日竞彩足球已开售场次=0。"
 }
