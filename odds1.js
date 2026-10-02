@@ -1,1 +1,1 @@
-window.RO1 = {};
+window.RO1={};

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-01 11:05:00",
+  "generated_at": "2026-10-02 11:10:00",
   "count": 0,
   "matches": [],
   "reports": [],
@@ -7,5 +7,5 @@
     {"code": "周三001", "league": "亚运会男足", "home": "韩国亚运男足", "away": "中国亚运男足", "kickoff": "09-30 14:00", "score": "2:1", "source": "新华社/体坛周报完场"},
     {"code": "周三002", "league": "亚运会男足", "home": "乌兹别克亚运男足", "away": "日本亚运男足", "kickoff": "09-30 18:30", "score": "1:1", "note": "90分钟1:1，加时1:1，点球日本10-9晋级", "source": "懂球帝/中國報完场"}
   ],
-  "sale_note": "500 trade.500.com/static/public/jczq/xml/odds/odds.xml 2026-10-01 11:06:57 matches 空；trade.500.com/jczq/?playid=312 无 data-matchnum；澳客 jingcai 无周四场次。当日竞彩足球已开售场次=0。"
+  "sale_note": "2026-10-02 周五 Asia/Hong_Kong。trade.500.com/jczq/?playid=312 与 date=2026-10-02 页面为「暂无赛事信息」，data-matchnum=0；odds.xml updatetime 2026-10-02 11:06:08 matches 空；澳客 jingcai/2026-10-02 仅回显已完场周三001/周三002，无周五编号。体彩 webapi 567。当日竞彩足球已开售场次=0。未编造场次。"
 }
