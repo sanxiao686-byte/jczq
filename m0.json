@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-10-02 11:10:00",
+  "generated_at": "2026-10-03 11:12:00",
   "count": 0,
   "matches": [],
   "reports": [],
   "reviews": [
-    {"code": "周三001", "league": "亚运会男足", "home": "韩国亚运男足", "away": "中国亚运男足", "kickoff": "09-30 14:00", "score": "2:1", "source": "新华社/体坛周报完场"},
-    {"code": "周三002", "league": "亚运会男足", "home": "乌兹别克亚运男足", "away": "日本亚运男足", "kickoff": "09-30 18:30", "score": "1:1", "note": "90分钟1:1，加时1:1，点球日本10-9晋级", "source": "懂球帝/中國報完场"}
+    {"code": "周三001", "league": "亚运会男足", "home": "韩国亚运男足", "away": "中国亚运男足", "kickoff": "09-30 14:00", "score": "2:1", "source": "500 ews jczq.json 完场；队名韩国U23 vs 中国U23"},
+    {"code": "周三002", "league": "亚运会男足", "home": "乌兹别克亚运男足", "away": "日本亚运男足", "kickoff": "09-30 18:30", "score": "1:1", "note": "500 ews：90分钟1:1，spot_kick_score 8:9（主8:客9），未再用第二源改写点球轮次", "source": "500 ews jczq.json 完场；队名乌兹别克斯坦U23 vs 日本U23"}
   ],
-  "sale_note": "2026-10-02 周五 Asia/Hong_Kong。trade.500.com/jczq/?playid=312 与 date=2026-10-02 页面为「暂无赛事信息」，data-matchnum=0；odds.xml updatetime 2026-10-02 11:06:08 matches 空；澳客 jingcai/2026-10-02 仅回显已完场周三001/周三002，无周五编号。体彩 webapi 567。当日竞彩足球已开售场次=0。未编造场次。"
+  "sale_note": "2026-10-03 周六 Asia/Hong_Kong。trade.500.com/jczq/?playid=312 与 date=2026-10-03 页面为「暂无赛事信息」，data-matchnum=0；odds.xml updatetime 2026-10-03 11:09:37 matches 空；澳客 jingcai/2026-10-03 仅回显已完场周三001/周三002，无周六编号；ews.500.com/static/ews/jczq/jczq.json 仅 2 场已完场周三。体彩 webapi 567。当日竞彩足球已开售场次=0。未编造场次。"
 }
