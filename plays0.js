@@ -1,4 +1,4 @@
-window.PLAY_PACK=Object.assign(window.PLAY_PACK||{}, {
+window.PLAY_PACK=Object.assign(window.PLAY_PACK||{},{
   "周一001": {
     "zjq": {
       "0": "10.50",

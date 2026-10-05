@@ -1,1 +1,1 @@
-window.PLAY_PACK=Object.assign(window.PLAY_PACK||{}, {});
+window.PLAY_PACK=Object.assign(window.PLAY_PACK||{},{});
