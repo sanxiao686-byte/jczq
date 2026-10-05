@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-05 11:25:00",
+  "generated_at": "2026-10-05 11:28:00",
   "count": 7,
   "matches": [
     {
@@ -10,11 +10,14 @@
       "date": "2026-10-06",
       "time": "00:00",
       "kickoff": "10-06 00:00",
-      "fid": "166037",
-      "fixture": "1398658",
-      "homeid": "84",
-      "awayid": "92",
-      "rq": "-1",
+      "fid": "1398658",
+      "xml_id": "166037",
+      "home_id": "84",
+      "away_id": "92",
+      "home_rank": 2,
+      "away_rank": 4,
+      "rq": -1,
+      "single": false,
       "spf": {
         "win": "1.52",
         "draw": "3.55",
@@ -34,11 +37,14 @@
       "date": "2026-10-06",
       "time": "02:45",
       "kickoff": "10-06 02:45",
-      "fid": "166038",
-      "fixture": "1398656",
-      "homeid": "10",
-      "awayid": "23",
-      "rq": "-1",
+      "fid": "1398656",
+      "xml_id": "166038",
+      "home_id": "10",
+      "away_id": "23",
+      "home_rank": 1,
+      "away_rank": 2,
+      "rq": -1,
+      "single": true,
       "spf": {
         "win": "1.34",
         "draw": "4.50",
@@ -58,11 +64,14 @@
       "date": "2026-10-06",
       "time": "02:45",
       "kickoff": "10-06 02:45",
-      "fid": "166039",
-      "fixture": "1398612",
-      "homeid": "26",
-      "awayid": "27",
-      "rq": "1",
+      "fid": "1398612",
+      "xml_id": "166039",
+      "home_id": "26",
+      "away_id": "27",
+      "home_rank": 4,
+      "away_rank": 1,
+      "rq": 1,
+      "single": false,
       "spf": {
         "win": "3.60",
         "draw": "3.70",
@@ -82,20 +91,23 @@
       "date": "2026-10-06",
       "time": "02:45",
       "kickoff": "10-06 02:45",
-      "fid": "166040",
-      "fixture": "1398659",
-      "homeid": "19",
-      "awayid": "17",
-      "rq": "-1",
+      "fid": "1398659",
+      "xml_id": "166040",
+      "home_id": "19",
+      "away_id": "17",
+      "home_rank": 3,
+      "away_rank": 4,
+      "rq": -1,
+      "single": false,
       "spf": {
-        "win": "1.37",
-        "draw": "4.50",
-        "lose": "5.70"
+        "win": "1.34",
+        "draw": "4.62",
+        "lose": "6.00"
       },
       "rqspf": {
-        "win": "2.14",
-        "draw": "3.65",
-        "lose": "2.58"
+        "win": "2.06",
+        "draw": "3.70",
+        "lose": "2.68"
       }
     },
     {
@@ -106,11 +118,14 @@
       "date": "2026-10-06",
       "time": "02:45",
       "kickoff": "10-06 02:45",
-      "fid": "166041",
-      "fixture": "1398609",
-      "homeid": "97",
-      "awayid": "77",
-      "rq": "-1",
+      "fid": "1398609",
+      "xml_id": "166041",
+      "home_id": "97",
+      "away_id": "77",
+      "home_rank": 1,
+      "away_rank": 4,
+      "rq": -1,
+      "single": false,
       "spf": {
         "win": "2.32",
         "draw": "2.85",
@@ -130,11 +145,14 @@
       "date": "2026-10-06",
       "time": "02:45",
       "kickoff": "10-06 02:45",
-      "fid": "166042",
-      "fixture": "1398654",
-      "homeid": "4172",
-      "awayid": "101",
-      "rq": "-1",
+      "fid": "1398654",
+      "xml_id": "166042",
+      "home_id": "4172",
+      "away_id": "101",
+      "home_rank": 1,
+      "away_rank": 3,
+      "rq": -1,
+      "single": false,
       "spf": {
         "win": "1.44",
         "draw": "4.00",
@@ -154,11 +172,14 @@
       "date": "2026-10-06",
       "time": "02:45",
       "kickoff": "10-06 02:45",
-      "fid": "166043",
-      "fixture": "1398615",
-      "homeid": "80",
-      "awayid": "37",
-      "rq": "1",
+      "fid": "1398615",
+      "xml_id": "166043",
+      "home_id": "80",
+      "away_id": "37",
+      "home_rank": 2,
+      "away_rank": 3,
+      "rq": 1,
+      "single": false,
       "spf": {
         "win": "2.95",
         "draw": "3.25",
@@ -174,24 +195,28 @@
   "reports": [],
   "reviews": [
     {
-      "code": "周三001",
-      "league": "亚运会男足",
-      "home": "韩国亚运男足",
-      "away": "中国亚运男足",
-      "kickoff": "09-30 14:00",
-      "score": "2:1",
-      "source": "500 ews jczq.json 完场；队名韩国U23 vs 中国U23"
+      "date": "2026-10-04",
+      "title": "周日无已开售完场",
+      "results": []
     },
     {
-      "code": "周三002",
-      "league": "亚运会男足",
-      "home": "乌兹别克亚运男足",
-      "away": "日本亚运男足",
-      "kickoff": "09-30 18:30",
-      "score": "1:1",
-      "note": "500 ews：90分钟1:1，spot_kick_score 8:9（主8:客9），未再用第二源改写点球轮次",
-      "source": "500 ews jczq.json 完场；队名乌兹别克斯坦U23 vs 日本U23"
+      "date": "2026-09-30",
+      "title": "此前完场（非昨日）",
+      "results": [
+        {
+          "code": "周三001",
+          "match": "韩国亚运男足 vs 中国亚运男足",
+          "full": "2:1",
+          "half": ""
+        },
+        {
+          "code": "周三002",
+          "match": "乌兹别克亚运男足 vs 日本亚运男足",
+          "full": "1:1",
+          "half": ""
+        }
+      ]
     }
   ],
-  "sale_note": "2026-10-05 周一 Asia/Hong_Kong。trade.500.com/jczq/?playid=312 已开售周一001-007共7场。10-04周日休市无完场。体彩webapi 567。初盘欧赔/大小球用澳客ajax；足彩网fenxi WAF。亚盘初盘未抓到。"
+  "sale_note": "2026-10-05 周一 Asia/Hong_Kong。trade.500.com/jczq/?playid=312 共7场欧国联，编号周一001-007连续。2026-10-04 周日页面暂无赛事，无新完场可复盘。"
 }
