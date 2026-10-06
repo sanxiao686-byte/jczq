@@ -1,7 +1,61 @@
 {
-  "generated_at": "2026-10-05 11:28:00",
-  "count": 0,
-  "matches": [],
+  "generated_at": "2026-10-06 11:20:00",
+  "count": 2,
+  "matches": [
+    {
+      "code": "周二011",
+      "league": "国际赛",
+      "home": "美国",
+      "away": "加拿大",
+      "date": "2026-10-07",
+      "time": "08:00",
+      "kickoff": "10-07 08:00",
+      "fid": "1495294",
+      "xml_id": "166054",
+      "zid": "4650127",
+      "home_id": "2",
+      "away_id": "72",
+      "rq": -1,
+      "single": false,
+      "spf": {
+        "win": "1.72",
+        "draw": "3.70",
+        "lose": "3.60"
+      },
+      "rqspf": {
+        "win": "3.10",
+        "draw": "3.60",
+        "lose": "1.89"
+      }
+    },
+    {
+      "code": "周二012",
+      "league": "美职足",
+      "home": "芝加哥",
+      "away": "温哥华",
+      "date": "2026-10-07",
+      "time": "08:30",
+      "kickoff": "10-07 08:30",
+      "fid": "1358414",
+      "xml_id": "166055",
+      "zid": "",
+      "home_id": "1349",
+      "away_id": "4285",
+      "rq": 1,
+      "single": false,
+      "spf": {
+        "win": "2.56",
+        "draw": "3.65",
+        "lose": "2.15"
+      },
+      "rqspf": {
+        "win": "1.53",
+        "draw": "4.10",
+        "lose": "4.32"
+      }
+    }
+  ],
   "reports": [],
-  "reviews": []
+  "reviews": [],
+  "sale_note": "周二011-012"
 }
