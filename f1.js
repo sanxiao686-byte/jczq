@@ -1,7 +1,7 @@
 window.FORM_PACK=Object.assign(window.FORM_PACK||{}, {
   "周四001": {
     "赫尔辛基": {
-      "summary": "500球队页近6场完场",
+      "summary": "500 liansai 球队页近期战绩完场",
       "rows": [
         {
           "date": "2026-09-19",
@@ -66,7 +66,7 @@ window.FORM_PACK=Object.assign(window.FORM_PACK||{}, {
       ]
     },
     "瓦萨": {
-      "summary": "500球队页近6场完场",
+      "summary": "500 liansai 球队页近期战绩完场",
       "rows": [
         {
           "date": "2026-09-19",
@@ -75,7 +75,7 @@ window.FORM_PACK=Object.assign(window.FORM_PACK||{}, {
           "away": "库普斯",
           "score": "0:2",
           "half": "0:2",
-          "result": "",
+          "result": "负",
           "hcap": ""
         },
         {
@@ -85,7 +85,7 @@ window.FORM_PACK=Object.assign(window.FORM_PACK||{}, {
           "away": "VPS瓦萨",
           "score": "1:0",
           "half": "0:0",
-          "result": "",
+          "result": "负",
           "hcap": ""
         },
         {
@@ -95,7 +95,7 @@ window.FORM_PACK=Object.assign(window.FORM_PACK||{}, {
           "away": "奥卢",
           "score": "1:0",
           "half": "1:0",
-          "result": "",
+          "result": "胜",
           "hcap": ""
         },
         {
@@ -105,7 +105,7 @@ window.FORM_PACK=Object.assign(window.FORM_PACK||{}, {
           "away": "拉赫蒂",
           "score": "0:1",
           "half": "0:1",
-          "result": "",
+          "result": "负",
           "hcap": ""
         },
         {
@@ -115,7 +115,7 @@ window.FORM_PACK=Object.assign(window.FORM_PACK||{}, {
           "away": "VPS瓦萨",
           "score": "0:1",
           "half": "0:1",
-          "result": "",
+          "result": "胜",
           "hcap": ""
         },
         {
@@ -125,7 +125,7 @@ window.FORM_PACK=Object.assign(window.FORM_PACK||{}, {
           "away": "TPS图尔库",
           "score": "1:3",
           "half": "0:2",
-          "result": "",
+          "result": "负",
           "hcap": ""
         }
       ]
@@ -133,7 +133,7 @@ window.FORM_PACK=Object.assign(window.FORM_PACK||{}, {
   },
   "周四002": {
     "库奥皮奥": {
-      "summary": "500球队页近6场完场",
+      "summary": "500 liansai 球队页近期战绩完场",
       "rows": [
         {
           "date": "2026-09-19",
@@ -142,7 +142,7 @@ window.FORM_PACK=Object.assign(window.FORM_PACK||{}, {
           "away": "库普斯",
           "score": "0:2",
           "half": "0:2",
-          "result": "",
+          "result": "胜",
           "hcap": ""
         },
         {
@@ -152,7 +152,7 @@ window.FORM_PACK=Object.assign(window.FORM_PACK||{}, {
           "away": "赫尔辛基",
           "score": "0:0",
           "half": "0:0",
-          "result": "",
+          "result": "平",
           "hcap": ""
         },
         {
@@ -162,7 +162,7 @@ window.FORM_PACK=Object.assign(window.FORM_PACK||{}, {
           "away": "库普斯",
           "score": "1:1",
           "half": "0:1",
-          "result": "",
+          "result": "平",
           "hcap": ""
         },
         {
@@ -172,7 +172,7 @@ window.FORM_PACK=Object.assign(window.FORM_PACK||{}, {
           "away": "库普斯",
           "score": "1:0",
           "half": "0:0",
-          "result": "",
+          "result": "负",
           "hcap": ""
         },
         {
@@ -182,7 +182,7 @@ window.FORM_PACK=Object.assign(window.FORM_PACK||{}, {
           "away": "沙姆洛克",
           "score": "1:0",
           "half": "0:0",
-          "result": "",
+          "result": "胜",
           "hcap": ""
         },
         {
@@ -192,13 +192,13 @@ window.FORM_PACK=Object.assign(window.FORM_PACK||{}, {
           "away": "玛丽港",
           "score": "2:4",
           "half": "1:3",
-          "result": "",
+          "result": "负",
           "hcap": ""
         }
       ]
     },
     "AC奥卢": {
-      "summary": "500球队页近6场完场",
+      "summary": "500 liansai 球队页近期战绩完场",
       "rows": [
         {
           "date": "2026-09-19",
@@ -207,7 +207,7 @@ window.FORM_PACK=Object.assign(window.FORM_PACK||{}, {
           "away": "图尔库国际",
           "score": "0:1",
           "half": "0:1",
-          "result": "",
+          "result": "负",
           "hcap": ""
         },
         {
@@ -217,7 +217,7 @@ window.FORM_PACK=Object.assign(window.FORM_PACK||{}, {
           "away": "格尼斯坦",
           "score": "1:2",
           "half": "0:0",
-          "result": "",
+          "result": "负",
           "hcap": ""
         },
         {
@@ -227,7 +227,7 @@ window.FORM_PACK=Object.assign(window.FORM_PACK||{}, {
           "away": "奥卢",
           "score": "1:0",
           "half": "1:0",
-          "result": "",
+          "result": "负",
           "hcap": ""
         },
         {
@@ -237,7 +237,7 @@ window.FORM_PACK=Object.assign(window.FORM_PACK||{}, {
           "away": "塞那乔其",
           "score": "0:0",
           "half": "0:0",
-          "result": "",
+          "result": "平",
           "hcap": ""
         },
         {
@@ -247,7 +247,7 @@ window.FORM_PACK=Object.assign(window.FORM_PACK||{}, {
           "away": "奥卢",
           "score": "0:1",
           "half": "0:0",
-          "result": "",
+          "result": "胜",
           "hcap": ""
         },
         {
@@ -257,139 +257,7 @@ window.FORM_PACK=Object.assign(window.FORM_PACK||{}, {
           "away": "图尔库国际",
           "score": "2:3",
           "half": "2:0",
-          "result": "",
-          "hcap": ""
-        }
-      ]
-    }
-  },
-  "周四003": {
-    "桑托斯": {
-      "summary": "500球队页近6场完场",
-      "rows": [
-        {
-          "date": "2026-10-03",
-          "league": "巴甲",
-          "home": "圣保罗",
-          "away": "桑托斯",
-          "score": "1:2",
-          "half": "1:1",
-          "result": "胜",
-          "hcap": ""
-        },
-        {
-          "date": "2026-09-20",
-          "league": "巴甲",
-          "home": "雷莫",
-          "away": "桑托斯",
-          "score": "1:2",
-          "half": "0:0",
-          "result": "胜",
-          "hcap": ""
-        },
-        {
-          "date": "2026-09-17",
-          "league": "南俱杯",
-          "home": "米内罗竞技",
-          "away": "桑托斯",
-          "score": "4:2",
-          "half": "3:1",
           "result": "负",
-          "hcap": ""
-        },
-        {
-          "date": "2026-09-13",
-          "league": "巴甲",
-          "home": "桑托斯",
-          "away": "克鲁塞罗",
-          "score": "2:1",
-          "half": "2:0",
-          "result": "胜",
-          "hcap": ""
-        },
-        {
-          "date": "2026-09-10",
-          "league": "南俱杯",
-          "home": "桑托斯",
-          "away": "米内罗竞技",
-          "score": "2:0",
-          "half": "1:0",
-          "result": "胜",
-          "hcap": ""
-        },
-        {
-          "date": "2026-09-07",
-          "league": "巴甲",
-          "home": "巴西国际",
-          "away": "桑托斯",
-          "score": "2:3",
-          "half": "0:3",
-          "result": "胜",
-          "hcap": ""
-        }
-      ]
-    },
-    "弗拉门戈": {
-      "summary": "500球队页近6场完场",
-      "rows": [
-        {
-          "date": "2026-09-21",
-          "league": "巴甲",
-          "home": "弗拉门戈",
-          "away": "布拉干蒂诺RB",
-          "score": "2:1",
-          "half": "1:0",
-          "result": "胜",
-          "hcap": ""
-        },
-        {
-          "date": "2026-09-18",
-          "league": "解放者杯",
-          "home": "弗拉门戈",
-          "away": "山谷独立",
-          "score": "1:1",
-          "half": "0:1",
-          "result": "平",
-          "hcap": ""
-        },
-        {
-          "date": "2026-09-14",
-          "league": "巴甲",
-          "home": "弗拉门戈",
-          "away": "科林蒂安",
-          "score": "2:1",
-          "half": "0:0",
-          "result": "胜",
-          "hcap": ""
-        },
-        {
-          "date": "2026-09-11",
-          "league": "解放者杯",
-          "home": "山谷独立",
-          "away": "弗拉门戈",
-          "score": "0:2",
-          "half": "0:0",
-          "result": "胜",
-          "hcap": ""
-        },
-        {
-          "date": "2026-09-07",
-          "league": "巴甲",
-          "home": "雷莫",
-          "away": "弗拉门戈",
-          "score": "0:1",
-          "half": "0:0",
-          "result": "胜",
-          "hcap": ""
-        },
-        {
-          "date": "2026-09-03",
-          "league": "巴甲",
-          "home": "弗拉门戈",
-          "away": "米拉索",
-          "score": "2:0",
-          "half": "2:0",
-          "result": "胜",
           "hcap": ""
         }
       ]
