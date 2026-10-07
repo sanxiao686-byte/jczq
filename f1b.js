@@ -1,1 +1,270 @@
-window.FORM_PACK=Object.assign(window.FORM_PACK||{}, {"周二010": {"摩尔多瓦": {"summary": "500球队页近6场完场", "rows": [{"date": "2026-10-02", "league": "欧国联", "home": "哈萨克斯坦", "away": "摩尔多瓦", "score": "1:2", "half": "0:1", "result": "胜", "hcap": ""}, {"date": "2026-09-30", "league": "欧国联", "home": "摩尔多瓦", "away": "法罗群岛", "score": "1:1", "half": "0:1", "result": "平", "hcap": ""}, {"date": "2026-09-27", "league": "欧国联", "home": "斯洛伐克", "away": "摩尔多瓦", "score": "2:0", "half": "2:0", "result": "负", "hcap": ""}, {"date": "2026-06-09", "league": "友谊赛", "home": "亚美尼亚", "away": "摩尔多瓦", "score": "1:1", "half": "0:0", "result": "平", "hcap": ""}, {"date": "2026-06-06", "league": "友谊赛", "home": "摩尔多瓦", "away": "保加利亚", "score": "2:2", "half": "0:1", "result": "平", "hcap": ""}, {"date": "2026-03-31", "league": "友谊赛", "home": "塞浦路斯", "away": "摩尔多瓦", "score": "3:2", "half": "3:0", "result": "负", "hcap": ""}]}, "斯洛伐克": {"summary": "500球队页近6场完场", "rows": [{"date": "2026-10-03", "league": "欧国联", "home": "法罗群岛", "away": "斯洛伐克", "score": "1:1", "half": "0:1", "result": "平", "hcap": ""}, {"date": "2026-09-30", "league": "欧国联", "home": "斯洛伐克", "away": "哈萨克斯坦", "score": "2:1", "half": "1:1", "result": "胜", "hcap": ""}, {"date": "2026-09-27", "league": "欧国联", "home": "斯洛伐克", "away": "摩尔多瓦", "score": "2:0", "half": "2:0", "result": "胜", "hcap": ""}, {"date": "2026-06-06", "league": "友谊赛", "home": "斯洛伐克", "away": "黑山", "score": "2:2", "half": "1:1", "result": "平", "hcap": ""}, {"date": "2026-06-02", "league": "友谊赛", "home": "斯洛伐克", "away": "马耳他", "score": "2:1", "half": "1:1", "result": "胜", "hcap": ""}, {"date": "2026-04-01", "league": "友谊赛", "home": "斯洛伐克", "away": "罗马尼亚", "score": "2:0", "half": "1:0", "result": "胜", "hcap": ""}]}}, "周二011": {"美国": {"summary": "500球队页近6场完场", "rows": [{"date": "2026-10-04", "league": "友谊赛", "home": "美国", "away": "墨西哥", "score": "3:0", "half": "1:0", "result": "胜", "hcap": ""}, {"date": "2026-09-30", "league": "友谊赛", "home": "美国", "away": "智利", "score": "4:2", "half": "1:1", "result": "胜", "hcap": ""}, {"date": "2026-09-27", "league": "友谊赛", "home": "美国", "away": "秘鲁", "score": "4:1", "half": "1:1", "result": "胜", "hcap": ""}, {"date": "2026-07-07", "league": "世界杯", "home": "美国", "away": "比利时", "score": "1:4", "half": "1:2", "result": "负", "hcap": ""}, {"date": "2026-07-02", "league": "世界杯", "home": "美国", "away": "波黑", "score": "2:0", "half": "1:0", "result": "胜", "hcap": ""}, {"date": "2026-06-26", "league": "世界杯", "home": "土耳其", "away": "美国", "score": "3:2", "half": "2:1", "result": "负", "hcap": ""}]}, "加拿大": {"summary": "500球队页近6场完场", "rows": [{"date": "2026-10-04", "league": "友谊赛", "home": "加拿大", "away": "秘鲁", "score": "2:0", "half": "2:0", "result": "胜", "hcap": ""}, {"date": "2026-09-27", "league": "友谊赛", "home": "加拿大", "away": "智利", "score": "1:0", "half": "1:0", "result": "胜", "hcap": ""}, {"date": "2026-07-05", "league": "世界杯", "home": "加拿大", "away": "摩洛哥", "score": "0:3", "half": "0:0", "result": "负", "hcap": ""}, {"date": "2026-06-29", "league": "世界杯", "home": "南非", "away": "加拿大", "score": "0:1", "half": "0:0", "result": "胜", "hcap": ""}, {"date": "2026-06-25", "league": "世界杯", "home": "瑞士", "away": "加拿大", "score": "2:1", "half": "0:0", "result": "负", "hcap": ""}, {"date": "2026-06-19", "league": "世界杯", "home": "加拿大", "away": "卡塔尔", "score": "6:0", "half": "3:0", "result": "胜", "hcap": ""}]}}, "周二012": {"芝加哥": {"summary": "500球队页近6场完场", "rows": [{"date": "2026-09-27", "league": "美职联", "home": "夏洛特FC", "away": "芝加哥火焰", "score": "0:1", "half": "0:0", "result": "胜", "hcap": ""}, {"date": "2026-09-20", "league": "美职联", "home": "纳什维尔SC", "away": "芝加哥火焰", "score": "3:0", "half": "1:0", "result": "负", "hcap": ""}, {"date": "2026-09-14", "league": "美职联", "home": "芝加哥火焰", "away": "新英格兰革命", "score": "1:2", "half": "0:1", "result": "负", "hcap": ""}, {"date": "2026-09-10", "league": "美职联", "home": "芝加哥火焰", "away": "迈阿密国际", "score": "1:1", "half": "1:0", "result": "平", "hcap": ""}, {"date": "2026-09-06", "league": "美职联", "home": "多伦多FC", "away": "芝加哥火焰", "score": "4:4", "half": "2:1", "result": "平", "hcap": ""}, {"date": "2026-08-30", "league": "美职联", "home": "西雅图海湾人", "away": "芝加哥火焰", "score": "2:2", "half": "1:1", "result": "平", "hcap": ""}]}, "温哥华": {"summary": "500球队页近6场完场", "rows": [{"date": "2026-09-27", "league": "美职联", "home": "温哥华白浪", "away": "华盛顿联", "score": "3:3", "half": "2:1", "result": "平", "hcap": ""}, {"date": "2026-09-20", "league": "美职联", "home": "皇家盐湖城", "away": "温哥华白浪", "score": "0:3", "half": "0:2", "result": "胜", "hcap": ""}, {"date": "2026-09-17", "league": "加拿冠", "home": "蒙特利尔CF", "away": "温哥华白浪", "score": "2:1", "half": "2:0", "result": "负", "hcap": ""}, {"date": "2026-09-14", "league": "美职联", "home": "温哥华白浪", "away": "奥斯汀FC", "score": "1:2", "half": "0:1", "result": "负", "hcap": ""}, {"date": "2026-09-10", "league": "美职联", "home": "温哥华白浪", "away": "洛杉矶银河", "score": "3:0", "half": "1:0", "result": "胜", "hcap": ""}, {"date": "2026-09-06", "league": "美职联", "home": "温哥华白浪", "away": "圣路易斯城", "score": "1:3", "half": "1:3", "result": "负", "hcap": ""}]}}});
+window.FORM_PACK=Object.assign(window.FORM_PACK||{}, {
+  "周四004": {
+    "巴拉纳竞技": null,
+    "米内罗竞技": null
+  },
+  "周四005": {
+    "弗鲁米嫩塞": {
+      "summary": "500球队页近6场完场",
+      "rows": [
+        {
+          "date": "2026-09-21",
+          "league": "巴甲",
+          "home": "科林蒂安",
+          "away": "弗鲁米嫩塞",
+          "score": "1:3",
+          "half": "0:1",
+          "result": "胜",
+          "hcap": ""
+        },
+        {
+          "date": "2026-09-16",
+          "league": "解放者杯",
+          "home": "普拉滕斯",
+          "away": "弗鲁米嫩塞",
+          "score": "2:1",
+          "half": "2:0",
+          "result": "负",
+          "hcap": ""
+        },
+        {
+          "date": "2026-09-13",
+          "league": "巴甲",
+          "home": "米内罗竞技",
+          "away": "弗鲁米嫩塞",
+          "score": "3:1",
+          "half": "0:0",
+          "result": "负",
+          "hcap": ""
+        },
+        {
+          "date": "2026-09-09",
+          "league": "解放者杯",
+          "home": "弗鲁米嫩塞",
+          "away": "普拉滕斯",
+          "score": "2:0",
+          "half": "2:0",
+          "result": "胜",
+          "hcap": ""
+        },
+        {
+          "date": "2026-09-06",
+          "league": "巴甲",
+          "home": "弗鲁米嫩塞",
+          "away": "瓦斯科达伽马",
+          "score": "1:0",
+          "half": "0:0",
+          "result": "胜",
+          "hcap": ""
+        },
+        {
+          "date": "2026-08-30",
+          "league": "巴甲",
+          "home": "巴拉纳竞技",
+          "away": "弗鲁米嫩塞",
+          "score": "3:3",
+          "half": "1:1",
+          "result": "平",
+          "hcap": ""
+        }
+      ]
+    },
+    "科里蒂巴": {
+      "summary": "500球队页近6场完场",
+      "rows": [
+        {
+          "date": "2026-09-20",
+          "league": "巴甲",
+          "home": "瓦斯科达伽马",
+          "away": "科里蒂巴",
+          "score": "5:0",
+          "half": "2:0",
+          "result": "负",
+          "hcap": ""
+        },
+        {
+          "date": "2026-09-12",
+          "league": "巴甲",
+          "home": "科里蒂巴",
+          "away": "巴拉纳竞技",
+          "score": "3:3",
+          "half": "1:2",
+          "result": "平",
+          "hcap": ""
+        },
+        {
+          "date": "2026-09-06",
+          "league": "巴甲",
+          "home": "科里蒂巴",
+          "away": "米拉索",
+          "score": "1:2",
+          "half": "0:0",
+          "result": "负",
+          "hcap": ""
+        },
+        {
+          "date": "2026-09-01",
+          "league": "巴甲",
+          "home": "雷莫",
+          "away": "科里蒂巴",
+          "score": "2:3",
+          "half": "0:0",
+          "result": "胜",
+          "hcap": ""
+        },
+        {
+          "date": "2026-08-24",
+          "league": "巴甲",
+          "home": "科里蒂巴",
+          "away": "科林蒂安",
+          "score": "2:1",
+          "half": "1:0",
+          "result": "胜",
+          "hcap": ""
+        },
+        {
+          "date": "2026-08-16",
+          "league": "巴甲",
+          "home": "圣保罗",
+          "away": "科里蒂巴",
+          "score": "1:1",
+          "half": "1:0",
+          "result": "平",
+          "hcap": ""
+        }
+      ]
+    }
+  },
+  "周四006": {
+    "帕尔梅拉斯": {
+      "summary": "500球队页近6场完场",
+      "rows": [
+        {
+          "date": "2026-09-20",
+          "league": "巴甲",
+          "home": "格雷米奥",
+          "away": "帕尔梅拉斯",
+          "score": "0:0",
+          "half": "0:0",
+          "result": "平",
+          "hcap": ""
+        },
+        {
+          "date": "2026-09-17",
+          "league": "解放者杯",
+          "home": "基多大学体育",
+          "away": "帕尔梅拉斯",
+          "score": "3:2",
+          "half": "1:1",
+          "result": "负",
+          "hcap": ""
+        },
+        {
+          "date": "2026-09-13",
+          "league": "巴甲",
+          "home": "帕尔梅拉斯",
+          "away": "圣保罗",
+          "score": "2:0",
+          "half": "1:0",
+          "result": "胜",
+          "hcap": ""
+        },
+        {
+          "date": "2026-09-10",
+          "league": "解放者杯",
+          "home": "帕尔梅拉斯",
+          "away": "基多大学体育",
+          "score": "1:0",
+          "half": "1:0",
+          "result": "胜",
+          "hcap": ""
+        },
+        {
+          "date": "2026-09-07",
+          "league": "巴甲",
+          "home": "博塔弗戈",
+          "away": "帕尔梅拉斯",
+          "score": "0:0",
+          "half": "0:0",
+          "result": "平",
+          "hcap": ""
+        },
+        {
+          "date": "2026-09-03",
+          "league": "巴西杯",
+          "home": "桑托斯",
+          "away": "帕尔梅拉斯",
+          "score": "0:0",
+          "half": "0:0",
+          "result": "平",
+          "hcap": ""
+        }
+      ]
+    },
+    "巴伊亚": {
+      "summary": "500球队页近6场完场",
+      "rows": [
+        {
+          "date": "2026-09-21",
+          "league": "巴甲",
+          "home": "巴拉纳竞技",
+          "away": "巴伊亚",
+          "score": "2:1",
+          "half": "1:1",
+          "result": "负",
+          "hcap": ""
+        },
+        {
+          "date": "2026-09-15",
+          "league": "巴甲",
+          "home": "巴伊亚",
+          "away": "雷莫",
+          "score": "2:1",
+          "half": "1:0",
+          "result": "胜",
+          "hcap": ""
+        },
+        {
+          "date": "2026-09-06",
+          "league": "巴甲",
+          "home": "布拉干蒂诺RB",
+          "away": "巴伊亚",
+          "score": "2:3",
+          "half": "2:2",
+          "result": "胜",
+          "hcap": ""
+        },
+        {
+          "date": "2026-08-31",
+          "league": "巴甲",
+          "home": "巴伊亚",
+          "away": "巴西国际",
+          "score": "3:2",
+          "half": "3:1",
+          "result": "胜",
+          "hcap": ""
+        },
+        {
+          "date": "2026-08-24",
+          "league": "巴甲",
+          "home": "维多利亚",
+          "away": "巴伊亚",
+          "score": "0:2",
+          "half": "0:0",
+          "result": "胜",
+          "hcap": ""
+        },
+        {
+          "date": "2026-08-16",
+          "league": "巴甲",
+          "home": "沙佩科恩斯",
+          "away": "巴伊亚",
+          "score": "3:3",
+          "half": "1:2",
+          "result": "平",
+          "hcap": ""
+        }
+      ]
+    }
+  }
+});
