@@ -1,7 +1,7 @@
 window.FORM_PACK=Object.assign(window.FORM_PACK||{}, {
   "周四003": {
     "桑托斯": {
-      "summary": "500 liansai 球队页近期战绩完场",
+      "summary": "500球队页近6场完场",
       "rows": [
         {
           "date": "2026-10-03",
@@ -66,7 +66,7 @@ window.FORM_PACK=Object.assign(window.FORM_PACK||{}, {
       ]
     },
     "弗拉门戈": {
-      "summary": "500 liansai 球队页近期战绩完场",
+      "summary": "500球队页近6场完场",
       "rows": [
         {
           "date": "2026-09-21",
@@ -132,7 +132,13 @@ window.FORM_PACK=Object.assign(window.FORM_PACK||{}, {
     }
   },
   "周四004": {
-    "巴拉纳竞技": null,
-    "米内罗竞技": null
+    "巴竞技": {
+      "summary": "500球队页无完场或无球队id",
+      "rows": []
+    },
+    "米竞技": {
+      "summary": "500球队页无完场或无球队id",
+      "rows": []
+    }
   }
 });

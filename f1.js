@@ -1,7 +1,7 @@
 window.FORM_PACK=Object.assign(window.FORM_PACK||{}, {
   "周四001": {
     "赫尔辛基": {
-      "summary": "500 liansai 球队页近期战绩完场",
+      "summary": "500球队页近6场完场",
       "rows": [
         {
           "date": "2026-09-19",
@@ -66,7 +66,7 @@ window.FORM_PACK=Object.assign(window.FORM_PACK||{}, {
       ]
     },
     "瓦萨": {
-      "summary": "500 liansai 球队页近期战绩完场",
+      "summary": "500球队页近6场完场",
       "rows": [
         {
           "date": "2026-09-19",
@@ -133,7 +133,7 @@ window.FORM_PACK=Object.assign(window.FORM_PACK||{}, {
   },
   "周四002": {
     "库奥皮奥": {
-      "summary": "500 liansai 球队页近期战绩完场",
+      "summary": "500球队页近6场完场",
       "rows": [
         {
           "date": "2026-09-19",
@@ -198,7 +198,7 @@ window.FORM_PACK=Object.assign(window.FORM_PACK||{}, {
       ]
     },
     "AC奥卢": {
-      "summary": "500 liansai 球队页近期战绩完场",
+      "summary": "500球队页近6场完场",
       "rows": [
         {
           "date": "2026-09-19",

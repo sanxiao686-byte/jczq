@@ -1,7 +1,7 @@
 window.FORM_PACK=Object.assign(window.FORM_PACK||{}, {
   "周四005": {
     "弗鲁米嫩": {
-      "summary": "500 liansai 球队页近期战绩完场",
+      "summary": "500球队页近6场完场",
       "rows": [
         {
           "date": "2026-09-21",
@@ -66,7 +66,7 @@ window.FORM_PACK=Object.assign(window.FORM_PACK||{}, {
       ]
     },
     "科里蒂巴": {
-      "summary": "500 liansai 球队页近期战绩完场",
+      "summary": "500球队页近6场完场",
       "rows": [
         {
           "date": "2026-09-20",
@@ -133,7 +133,7 @@ window.FORM_PACK=Object.assign(window.FORM_PACK||{}, {
   },
   "周四006": {
     "帕梅拉斯": {
-      "summary": "500 liansai 球队页近期战绩完场",
+      "summary": "500球队页近6场完场",
       "rows": [
         {
           "date": "2026-09-20",
@@ -198,7 +198,7 @@ window.FORM_PACK=Object.assign(window.FORM_PACK||{}, {
       ]
     },
     "巴伊亚": {
-      "summary": "500 liansai 球队页近期战绩完场",
+      "summary": "500球队页近6场完场",
       "rows": [
         {
           "date": "2026-09-21",
