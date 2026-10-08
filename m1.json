@@ -1,63 +1,8 @@
 {
-  "generated_at": "2026-10-07 11:30:00",
-  "count": 2,
-  "matches": [
-    {
-      "code": "周四005",
-      "league": "巴甲",
-      "home": "弗鲁米嫩",
-      "away": "科里蒂巴",
-      "date": "2026-10-09",
-      "time": "08:30",
-      "kickoff": "10-09 08:30",
-      "fid": "1362406",
-      "xml_id": "166066",
-      "zid": "4465789",
-      "ok_mid": "1316979",
-      "home_id": "1578",
-      "away_id": "1573",
-      "rq": -1,
-      "single": false,
-      "spf": {
-        "win": "1.33",
-        "draw": "4.25",
-        "lose": "7.05"
-      },
-      "rqspf": {
-        "win": "2.15",
-        "draw": "3.33",
-        "lose": "2.75"
-      }
-    },
-    {
-      "code": "周四006",
-      "league": "巴甲",
-      "home": "帕梅拉斯",
-      "away": "巴伊亚",
-      "date": "2026-10-09",
-      "time": "08:30",
-      "kickoff": "10-09 08:30",
-      "fid": "1362487",
-      "xml_id": "166067",
-      "zid": "4465870",
-      "ok_mid": "1316982",
-      "home_id": "1567",
-      "away_id": "2277",
-      "rq": -1,
-      "single": false,
-      "spf": {
-        "win": "1.42",
-        "draw": "4.00",
-        "lose": "5.70"
-      },
-      "rqspf": {
-        "win": "2.40",
-        "draw": "3.28",
-        "lose": "2.45"
-      }
-    }
-  ],
+  "generated_at": "2026-10-08 11:20:00",
+  "count": 0,
+  "matches": [],
   "reports": [],
   "reviews": [],
-  "sale_note": "2026-10-07 周三 Asia/Hong_Kong。trade.500.com/jczq/?playid=312 已开售12场：周三001-006、周四001-006。周二011美国vs加拿大、周二012芝加哥vs温哥华页面未标比分，不写入复盘。足彩网 fenxi WAF。odds.xml 无166065（周四004）。必发/xG null。"
+  "sale_note": "2026-10-08 周四 Asia/Hong_Kong。已开售周四001-006（odds.xml processname 4001-4006）。周三001-006已开赛完场，写入reviews。足彩网fenxi WAF，澳客odds ajax 405，初盘写—。必发/xG null。周四004无500球队id，近6取澳客history。"
 }

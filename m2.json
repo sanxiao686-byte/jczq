@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-10-07 11:30:00",
+  "generated_at": "2026-10-08 11:20:00",
   "count": 0,
   "matches": [],
   "reports": [],
   "reviews": [],
-  "sale_note": "2026-10-07 周三 Asia/Hong_Kong。trade.500.com/jczq/?playid=312 已开售12场：周三001-006、周四001-006。周二011美国vs加拿大、周二012芝加哥vs温哥华页面未标比分，不写入复盘。足彩网 fenxi WAF。odds.xml 无166065（周四004）。必发/xG null。"
+  "sale_note": "2026-10-08 周四 Asia/Hong_Kong。已开售周四001-006（odds.xml processname 4001-4006）。周三001-006已开赛完场，写入reviews。足彩网fenxi WAF，澳客odds ajax 405，初盘写—。必发/xG null。周四004无500球队id，近6取澳客history。"
 }
