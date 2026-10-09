@@ -1,8 +1,63 @@
 {
-  "generated_at": "2026-10-08 11:20:00",
-  "count": 0,
-  "matches": [],
+  "generated_at": "2026-10-09 11:20:00",
+  "count": 2,
+  "matches": [
+    {
+      "code": "周五011",
+      "league": "西班牙甲级联赛",
+      "home": "马拉加",
+      "away": "西班牙人",
+      "date": "2026-10-10",
+      "time": "03:00",
+      "kickoff": "10-10 03:00",
+      "fid": "1428060",
+      "xml_id": "166078",
+      "zid": "4565439",
+      "ok_mid": "",
+      "home_id": "1056",
+      "away_id": "1283",
+      "rq": 1,
+      "single": false,
+      "spf": {
+        "win": "2.62",
+        "draw": "3.12",
+        "lose": "2.35"
+      },
+      "rqspf": {
+        "win": "1.45",
+        "draw": "4.10",
+        "lose": "5.10"
+      }
+    },
+    {
+      "code": "周五012",
+      "league": "葡萄牙超级联赛",
+      "home": "布拉加",
+      "away": "里斯本",
+      "date": "2026-10-10",
+      "time": "03:15",
+      "kickoff": "10-10 03:15",
+      "fid": "1438137",
+      "xml_id": "166079",
+      "zid": "4578216",
+      "ok_mid": "",
+      "home_id": "719",
+      "away_id": "1000",
+      "rq": 1,
+      "single": false,
+      "spf": {
+        "win": "3.43",
+        "draw": "3.30",
+        "lose": "1.87"
+      },
+      "rqspf": {
+        "win": "1.72",
+        "draw": "3.55",
+        "lose": "3.75"
+      }
+    }
+  ],
   "reports": [],
   "reviews": [],
-  "sale_note": "2026-10-08 周四 Asia/Hong_Kong。已开售周四001-006（odds.xml processname 4001-4006）。周三001-006已开赛完场，写入reviews。足彩网fenxi WAF，澳客odds ajax 405，初盘写—。必发/xG null。周四004无500球队id，近6取澳客history。"
+  "sale_note": "2026-10-09 周五 Asia/Hong_Kong。已开售周五001-012。周五006胜平负官方未开售。欧赔/亚盘/大小球即时取500 odds.xml 11:06。欧赔初盘仅周五001取到足彩网fenxi/4480493/bjop，其后WAF。亚盘初盘、大小球初盘未取到，写—。近6场取500球队页。交锋：足彩网bsls WAF、澳客history/ajax 405，rows空。必发/xG null。周四001-006完场写入reviews。"
 }

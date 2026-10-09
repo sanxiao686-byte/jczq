@@ -1,790 +1,394 @@
 window.FORM_PACK=Object.assign(window.FORM_PACK||{}, {
-  "周四001": {
-    "赫尔辛基": {
-      "summary": "500球队页近6场完场",
+  "周五001": {
+    "仁川联": {
+      "summary": "500球队页近6场完场 liansai.500.com/team/1612/",
       "rows": [
         {
-          "date": "2026-09-19",
-          "league": "芬超",
-          "home": "格尼斯坦",
-          "away": "赫尔辛基",
-          "score": "1:1",
-          "half": "1:1",
-          "result": "平",
-          "hcap": ""
-        },
-        {
-          "date": "2026-09-13",
-          "league": "芬超",
-          "home": "库普斯",
-          "away": "赫尔辛基",
+          "date": "2026-09-27",
+          "league": "K1联赛",
+          "home": "江原FC",
+          "away": "仁川联",
           "score": "0:0",
           "half": "0:0",
           "result": "平",
           "hcap": ""
         },
         {
-          "date": "2026-09-09",
-          "league": "芬超",
-          "home": "赫尔辛基",
-          "away": "图尔库国际",
+          "date": "2026-09-20",
+          "league": "K1联赛",
+          "home": "仁川联",
+          "away": "大田市民",
+          "score": "1:1",
+          "half": "1:0",
+          "result": "平",
+          "hcap": ""
+        },
+        {
+          "date": "2026-09-12",
+          "league": "K1联赛",
+          "home": "蔚山HD",
+          "away": "仁川联",
           "score": "2:1",
-          "half": "0:1",
+          "half": "0:0",
+          "result": "负",
+          "hcap": ""
+        },
+        {
+          "date": "2026-09-08",
+          "league": "K1联赛",
+          "home": "仁川联",
+          "away": "富川FC",
+          "score": "2:1",
+          "half": "1:1",
           "result": "胜",
           "hcap": ""
         },
         {
           "date": "2026-09-05",
-          "league": "芬兰杯",
-          "home": "图尔库国际",
-          "away": "赫尔辛基",
+          "league": "K1联赛",
+          "home": "FC首尔",
+          "away": "仁川联",
           "score": "1:0",
-          "half": "1:0",
-          "result": "负",
-          "hcap": ""
-        },
-        {
-          "date": "2026-09-01",
-          "league": "芬超",
-          "home": "埃尔维斯",
-          "away": "赫尔辛基",
-          "score": "1:2",
           "half": "0:0",
-          "result": "胜",
+          "result": "负",
           "hcap": ""
         },
         {
-          "date": "2026-08-23",
-          "league": "芬超",
-          "home": "赫尔辛基",
-          "away": "格尼斯坦",
-          "score": "2:3",
-          "half": "2:0",
-          "result": "负",
+          "date": "2026-08-30",
+          "league": "K1联赛",
+          "home": "仁川联",
+          "away": "全北现代",
+          "score": "1:1",
+          "half": "0:0",
+          "result": "平",
           "hcap": ""
         }
       ]
     },
-    "瓦萨": {
-      "summary": "500球队页近6场完场",
+    "浦项制铁": {
+      "summary": "500球队页近6场完场 liansai.500.com/team/1608/",
       "rows": [
         {
-          "date": "2026-09-19",
-          "league": "芬超",
-          "home": "VPS瓦萨",
-          "away": "库普斯",
-          "score": "0:2",
-          "half": "0:2",
-          "result": "负",
-          "hcap": ""
-        },
-        {
-          "date": "2026-09-14",
-          "league": "芬超",
-          "home": "图尔库国际",
-          "away": "VPS瓦萨",
-          "score": "1:0",
-          "half": "0:0",
-          "result": "负",
-          "hcap": ""
-        },
-        {
-          "date": "2026-09-08",
-          "league": "芬超",
-          "home": "VPS瓦萨",
-          "away": "奥卢",
-          "score": "1:0",
-          "half": "1:0",
+          "date": "2026-09-20",
+          "league": "K1联赛",
+          "home": "浦项铁人",
+          "away": "FC首尔",
+          "score": "2:1",
+          "half": "2:0",
           "result": "胜",
           "hcap": ""
         },
         {
-          "date": "2026-09-01",
-          "league": "芬超",
-          "home": "VPS瓦萨",
-          "away": "拉赫蒂",
-          "score": "0:1",
-          "half": "0:1",
+          "date": "2026-09-15",
+          "league": "亚冠杯",
+          "home": "北京国安",
+          "away": "浦项铁人",
+          "score": "3:1",
+          "half": "2:1",
           "result": "负",
           "hcap": ""
         },
         {
-          "date": "2026-08-22",
-          "league": "芬超",
-          "home": "埃尔维斯",
-          "away": "VPS瓦萨",
-          "score": "0:1",
-          "half": "0:1",
-          "result": "胜",
-          "hcap": ""
-        },
-        {
-          "date": "2026-08-14",
-          "league": "芬超",
-          "home": "VPS瓦萨",
-          "away": "TPS图尔库",
-          "score": "1:3",
-          "half": "0:2",
-          "result": "负",
-          "hcap": ""
-        }
-      ]
-    }
-  },
-  "周四002": {
-    "库奥皮奥": {
-      "summary": "500球队页近6场完场",
-      "rows": [
-        {
-          "date": "2026-09-19",
-          "league": "芬超",
-          "home": "VPS瓦萨",
-          "away": "库普斯",
-          "score": "0:2",
-          "half": "0:2",
-          "result": "胜",
-          "hcap": ""
-        },
-        {
-          "date": "2026-09-13",
-          "league": "芬超",
-          "home": "库普斯",
-          "away": "赫尔辛基",
-          "score": "0:0",
+          "date": "2026-09-12",
+          "league": "K1联赛",
+          "home": "大田市民",
+          "away": "浦项铁人",
+          "score": "2:2",
           "half": "0:0",
           "result": "平",
           "hcap": ""
         },
         {
           "date": "2026-09-09",
-          "league": "芬超",
-          "home": "格尼斯坦",
-          "away": "库普斯",
-          "score": "1:1",
-          "half": "0:1",
-          "result": "平",
-          "hcap": ""
-        },
-        {
-          "date": "2026-09-01",
-          "league": "芬超",
-          "home": "图尔库国际",
-          "away": "库普斯",
-          "score": "1:0",
-          "half": "0:0",
-          "result": "负",
-          "hcap": ""
-        },
-        {
-          "date": "2026-08-27",
-          "league": "欧协联",
-          "home": "库普斯",
-          "away": "沙姆洛克",
-          "score": "1:0",
-          "half": "0:0",
-          "result": "胜",
-          "hcap": ""
-        },
-        {
-          "date": "2026-08-23",
-          "league": "芬超",
-          "home": "库普斯",
-          "away": "玛丽港",
-          "score": "2:4",
-          "half": "1:3",
-          "result": "负",
-          "hcap": ""
-        }
-      ]
-    },
-    "AC奥卢": {
-      "summary": "500球队页近6场完场",
-      "rows": [
-        {
-          "date": "2026-09-19",
-          "league": "芬超",
-          "home": "奥卢",
-          "away": "图尔库国际",
-          "score": "0:1",
-          "half": "0:1",
-          "result": "负",
-          "hcap": ""
-        },
-        {
-          "date": "2026-09-13",
-          "league": "芬超",
-          "home": "奥卢",
-          "away": "格尼斯坦",
-          "score": "1:2",
-          "half": "0:0",
-          "result": "负",
-          "hcap": ""
-        },
-        {
-          "date": "2026-09-08",
-          "league": "芬超",
-          "home": "VPS瓦萨",
-          "away": "奥卢",
-          "score": "1:0",
-          "half": "1:0",
-          "result": "负",
-          "hcap": ""
-        },
-        {
-          "date": "2026-09-01",
-          "league": "芬超",
-          "home": "奥卢",
-          "away": "塞那乔其",
+          "league": "K1联赛",
+          "home": "浦项铁人",
+          "away": "金泉尚武",
           "score": "0:0",
           "half": "0:0",
           "result": "平",
           "hcap": ""
         },
         {
-          "date": "2026-08-22",
-          "league": "芬超",
-          "home": "雅罗",
-          "away": "奥卢",
-          "score": "0:1",
-          "half": "0:0",
-          "result": "胜",
-          "hcap": ""
-        },
-        {
-          "date": "2026-08-16",
-          "league": "芬超",
-          "home": "奥卢",
-          "away": "图尔库国际",
-          "score": "2:3",
-          "half": "2:0",
-          "result": "负",
-          "hcap": ""
-        }
-      ]
-    }
-  },
-  "周四003": {
-    "桑托斯": {
-      "summary": "500球队页近6场完场",
-      "rows": [
-        {
-          "date": "2026-10-03",
-          "league": "巴甲",
-          "home": "圣保罗",
-          "away": "桑托斯",
-          "score": "1:2",
-          "half": "1:1",
-          "result": "胜",
-          "hcap": ""
-        },
-        {
-          "date": "2026-09-20",
-          "league": "巴甲",
-          "home": "雷莫",
-          "away": "桑托斯",
-          "score": "1:2",
-          "half": "0:0",
-          "result": "胜",
-          "hcap": ""
-        },
-        {
-          "date": "2026-09-17",
-          "league": "南俱杯",
-          "home": "米内罗竞技",
-          "away": "桑托斯",
-          "score": "4:2",
-          "half": "3:1",
-          "result": "负",
-          "hcap": ""
-        },
-        {
-          "date": "2026-09-13",
-          "league": "巴甲",
-          "home": "桑托斯",
-          "away": "克鲁塞罗",
-          "score": "2:1",
-          "half": "2:0",
-          "result": "胜",
-          "hcap": ""
-        },
-        {
-          "date": "2026-09-10",
-          "league": "南俱杯",
-          "home": "桑托斯",
-          "away": "米内罗竞技",
+          "date": "2026-09-05",
+          "league": "K1联赛",
+          "home": "全北现代",
+          "away": "浦项铁人",
           "score": "2:0",
-          "half": "1:0",
-          "result": "胜",
-          "hcap": ""
-        },
-        {
-          "date": "2026-09-07",
-          "league": "巴甲",
-          "home": "巴西国际",
-          "away": "桑托斯",
-          "score": "2:3",
-          "half": "0:3",
-          "result": "胜",
-          "hcap": ""
-        }
-      ]
-    },
-    "弗拉门戈": {
-      "summary": "500球队页近6场完场",
-      "rows": [
-        {
-          "date": "2026-09-21",
-          "league": "巴甲",
-          "home": "弗拉门戈",
-          "away": "布拉干蒂诺RB",
-          "score": "2:1",
-          "half": "1:0",
-          "result": "胜",
-          "hcap": ""
-        },
-        {
-          "date": "2026-09-18",
-          "league": "解放者杯",
-          "home": "弗拉门戈",
-          "away": "山谷独立",
-          "score": "1:1",
-          "half": "0:1",
-          "result": "平",
-          "hcap": ""
-        },
-        {
-          "date": "2026-09-14",
-          "league": "巴甲",
-          "home": "弗拉门戈",
-          "away": "科林蒂安",
-          "score": "2:1",
           "half": "0:0",
-          "result": "胜",
-          "hcap": ""
-        },
-        {
-          "date": "2026-09-11",
-          "league": "解放者杯",
-          "home": "山谷独立",
-          "away": "弗拉门戈",
-          "score": "0:2",
-          "half": "0:0",
-          "result": "胜",
-          "hcap": ""
-        },
-        {
-          "date": "2026-09-07",
-          "league": "巴甲",
-          "home": "雷莫",
-          "away": "弗拉门戈",
-          "score": "0:1",
-          "half": "0:0",
-          "result": "胜",
-          "hcap": ""
-        },
-        {
-          "date": "2026-09-03",
-          "league": "巴甲",
-          "home": "弗拉门戈",
-          "away": "米拉索",
-          "score": "2:0",
-          "half": "2:0",
-          "result": "胜",
-          "hcap": ""
-        }
-      ]
-    }
-  },
-  "周四004": {
-    "巴竞技": {
-      "summary": "澳客history近期完场（500球队页无id）",
-      "rows": [
-        {
-          "date": "2026-09-21",
-          "league": "巴甲",
-          "home": "巴拉纳竞技",
-          "away": "巴伊亚",
-          "score": "2:1",
-          "half": "1:1",
-          "result": "",
-          "hcap": ""
-        },
-        {
-          "date": "2026-09-12",
-          "league": "巴甲",
-          "home": "科里蒂巴",
-          "away": "巴拉纳竞技",
-          "score": "3:3",
-          "half": "1:2",
-          "result": "",
-          "hcap": ""
-        },
-        {
-          "date": "2026-09-07",
-          "league": "巴甲",
-          "home": "克鲁塞罗",
-          "away": "巴拉纳竞技",
-          "score": "3:1",
-          "half": "1:1",
-          "result": "",
+          "result": "负",
           "hcap": ""
         },
         {
           "date": "2026-08-30",
-          "league": "巴甲",
-          "home": "巴拉纳竞技",
-          "away": "弗鲁米嫩塞",
-          "score": "3:3",
-          "half": "1:1",
-          "result": "",
-          "hcap": ""
-        },
-        {
-          "date": "2026-08-25",
-          "league": "巴甲",
-          "home": "博塔弗戈",
-          "away": "巴拉纳竞技",
-          "score": "2:3",
-          "half": "0:2",
-          "result": "",
-          "hcap": ""
-        },
-        {
-          "date": "2026-08-16",
-          "league": "巴甲",
-          "home": "巴拉纳竞技",
-          "away": "布拉干蒂诺",
-          "score": "1:1",
+          "league": "K1联赛",
+          "home": "江原FC",
+          "away": "浦项铁人",
+          "score": "0:0",
           "half": "0:0",
-          "result": "",
-          "hcap": ""
-        }
-      ]
-    },
-    "米竞技": {
-      "summary": "澳客history近期完场（500球队页无id）",
-      "rows": [
-        {
-          "date": "2026-10-04",
-          "league": "巴甲",
-          "home": "米内罗竞技",
-          "away": "布拉干蒂诺",
-          "score": "1:0",
-          "half": "1:0",
-          "result": "",
-          "hcap": ""
-        },
-        {
-          "date": "2026-09-20",
-          "league": "巴甲",
-          "home": "米内罗竞技",
-          "away": "沙佩科恩斯",
-          "score": "1:1",
-          "half": "0:1",
-          "result": "",
-          "hcap": ""
-        },
-        {
-          "date": "2026-09-17",
-          "league": "南俱杯",
-          "home": "米内罗竞技",
-          "away": "桑托斯",
-          "score": "4:2",
-          "half": "3:1",
-          "result": "",
-          "hcap": ""
-        },
-        {
-          "date": "2026-09-13",
-          "league": "巴甲",
-          "home": "米内罗竞技",
-          "away": "弗鲁米嫩塞",
-          "score": "3:1",
-          "half": "0:0",
-          "result": "",
-          "hcap": ""
-        },
-        {
-          "date": "2026-09-10",
-          "league": "南俱杯",
-          "home": "桑托斯",
-          "away": "米内罗竞技",
-          "score": "2:0",
-          "half": "1:0",
-          "result": "",
-          "hcap": ""
-        },
-        {
-          "date": "2026-09-06",
-          "league": "巴甲",
-          "home": "圣保罗",
-          "away": "米内罗竞技",
-          "score": "2:0",
-          "half": "0:0",
-          "result": "",
+          "result": "平",
           "hcap": ""
         }
       ]
     }
   },
-  "周四005": {
-    "弗鲁米嫩": {
-      "summary": "500球队页近6场完场",
+  "周五002": {
+    "柏太阳神": {
+      "summary": "500球队页近6场完场 liansai.500.com/team/658/",
       "rows": [
         {
-          "date": "2026-09-21",
-          "league": "巴甲",
-          "home": "科林蒂安",
-          "away": "弗鲁米嫩塞",
-          "score": "1:3",
-          "half": "0:1",
+          "date": "2026-10-03",
+          "league": "日联杯",
+          "home": "柏太阳神",
+          "away": "大阪钢巴",
+          "score": "3:3",
+          "half": "1:1",
+          "result": "平",
+          "hcap": ""
+        },
+        {
+          "date": "2026-09-23",
+          "league": "日天皇杯",
+          "home": "柏太阳神",
+          "away": "FC今治",
+          "score": "4:0",
+          "half": "2:0",
+          "result": "胜",
+          "hcap": ""
+        },
+        {
+          "date": "2026-09-20",
+          "league": "日职",
+          "home": "町田泽维亚",
+          "away": "柏太阳神",
+          "score": "2:4",
+          "half": "1:0",
           "result": "胜",
           "hcap": ""
         },
         {
           "date": "2026-09-16",
-          "league": "解放者杯",
-          "home": "普拉滕斯",
-          "away": "弗鲁米嫩塞",
+          "league": "亚冠杯",
+          "home": "全北现代",
+          "away": "柏太阳神",
           "score": "2:1",
-          "half": "2:0",
+          "half": "0:1",
           "result": "负",
           "hcap": ""
         },
         {
-          "date": "2026-09-13",
-          "league": "巴甲",
-          "home": "米内罗竞技",
-          "away": "弗鲁米嫩塞",
-          "score": "3:1",
-          "half": "0:0",
-          "result": "负",
-          "hcap": ""
-        },
-        {
-          "date": "2026-09-09",
-          "league": "解放者杯",
-          "home": "弗鲁米嫩塞",
-          "away": "普拉滕斯",
-          "score": "2:0",
+          "date": "2026-09-11",
+          "league": "日职",
+          "home": "京都不死鸟",
+          "away": "柏太阳神",
+          "score": "2:3",
           "half": "2:0",
           "result": "胜",
           "hcap": ""
         },
         {
           "date": "2026-09-06",
-          "league": "巴甲",
-          "home": "弗鲁米嫩塞",
-          "away": "瓦斯科达伽马",
+          "league": "日职",
+          "home": "柏太阳神",
+          "away": "横滨水手",
+          "score": "0:2",
+          "half": "0:1",
+          "result": "负",
+          "hcap": ""
+        }
+      ]
+    },
+    "神户胜利": {
+      "summary": "500球队页近6场完场 liansai.500.com/team/492/",
+      "rows": [
+        {
+          "date": "2026-09-23",
+          "league": "日天皇杯",
+          "home": "神户胜利船",
+          "away": "鸟栖砂岩",
           "score": "1:0",
           "half": "0:0",
           "result": "胜",
           "hcap": ""
         },
         {
-          "date": "2026-08-30",
-          "league": "巴甲",
-          "home": "巴拉纳竞技",
-          "away": "弗鲁米嫩塞",
-          "score": "3:3",
-          "half": "1:1",
-          "result": "平",
-          "hcap": ""
-        }
-      ]
-    },
-    "科里蒂巴": {
-      "summary": "500球队页近6场完场",
-      "rows": [
-        {
           "date": "2026-09-20",
-          "league": "巴甲",
-          "home": "瓦斯科达伽马",
-          "away": "科里蒂巴",
-          "score": "5:0",
-          "half": "2:0",
-          "result": "负",
+          "league": "日职",
+          "home": "大阪钢巴",
+          "away": "神户胜利船",
+          "score": "0:1",
+          "half": "0:0",
+          "result": "胜",
           "hcap": ""
         },
         {
-          "date": "2026-09-12",
-          "league": "巴甲",
-          "home": "科里蒂巴",
-          "away": "巴拉纳竞技",
-          "score": "3:3",
-          "half": "1:2",
-          "result": "平",
+          "date": "2026-09-16",
+          "league": "亚冠杯",
+          "home": "泰港",
+          "away": "神户胜利船",
+          "score": "1:2",
+          "half": "1:1",
+          "result": "胜",
+          "hcap": ""
+        },
+        {
+          "date": "2026-09-11",
+          "league": "日职",
+          "home": "神户胜利船",
+          "away": "鹿岛鹿角",
+          "score": "2:1",
+          "half": "0:0",
+          "result": "胜",
           "hcap": ""
         },
         {
           "date": "2026-09-06",
-          "league": "巴甲",
-          "home": "科里蒂巴",
-          "away": "米拉索",
-          "score": "1:2",
-          "half": "0:0",
-          "result": "负",
-          "hcap": ""
-        },
-        {
-          "date": "2026-09-01",
-          "league": "巴甲",
-          "home": "雷莫",
-          "away": "科里蒂巴",
-          "score": "2:3",
-          "half": "0:0",
+          "league": "日职",
+          "home": "神户胜利船",
+          "away": "长崎航海",
+          "score": "3:1",
+          "half": "2:0",
           "result": "胜",
           "hcap": ""
         },
         {
-          "date": "2026-08-24",
-          "league": "巴甲",
-          "home": "科里蒂巴",
-          "away": "科林蒂安",
-          "score": "2:1",
-          "half": "1:0",
+          "date": "2026-09-02",
+          "league": "日职",
+          "home": "东京绿茵",
+          "away": "神户胜利船",
+          "score": "0:2",
+          "half": "0:1",
           "result": "胜",
-          "hcap": ""
-        },
-        {
-          "date": "2026-08-16",
-          "league": "巴甲",
-          "home": "圣保罗",
-          "away": "科里蒂巴",
-          "score": "1:1",
-          "half": "1:0",
-          "result": "平",
           "hcap": ""
         }
       ]
     }
   },
-  "周四006": {
-    "帕梅拉斯": {
-      "summary": "500球队页近6场完场",
+  "周五003": {
+    "海登海姆": {
+      "summary": "500球队页近6场完场 liansai.500.com/team/5315/",
       "rows": [
         {
-          "date": "2026-09-20",
-          "league": "巴甲",
-          "home": "格雷米奥",
-          "away": "帕尔梅拉斯",
-          "score": "0:0",
-          "half": "0:0",
-          "result": "平",
+          "date": "2026-10-02",
+          "league": "球会友谊",
+          "home": "海登海姆",
+          "away": "维尔茨堡踢球者",
+          "score": "3:1",
+          "half": "2:0",
+          "result": "胜",
           "hcap": ""
         },
         {
-          "date": "2026-09-17",
-          "league": "解放者杯",
-          "home": "基多大学体育",
-          "away": "帕尔梅拉斯",
-          "score": "3:2",
-          "half": "1:1",
+          "date": "2026-09-25",
+          "league": "球会友谊",
+          "home": "斯图加特",
+          "away": "海登海姆",
+          "score": "3:0",
+          "half": "1:0",
           "result": "负",
+          "hcap": ""
+        },
+        {
+          "date": "2026-09-20",
+          "league": "德乙",
+          "home": "比勒菲尔德",
+          "away": "海登海姆",
+          "score": "2:2",
+          "half": "1:2",
+          "result": "平",
           "hcap": ""
         },
         {
           "date": "2026-09-13",
-          "league": "巴甲",
-          "home": "帕尔梅拉斯",
-          "away": "圣保罗",
-          "score": "2:0",
-          "half": "1:0",
-          "result": "胜",
-          "hcap": ""
-        },
-        {
-          "date": "2026-09-10",
-          "league": "解放者杯",
-          "home": "帕尔梅拉斯",
-          "away": "基多大学体育",
+          "league": "德乙",
+          "home": "海登海姆",
+          "away": "荷尔斯泰因",
           "score": "1:0",
-          "half": "1:0",
-          "result": "胜",
-          "hcap": ""
-        },
-        {
-          "date": "2026-09-07",
-          "league": "巴甲",
-          "home": "博塔弗戈",
-          "away": "帕尔梅拉斯",
-          "score": "0:0",
           "half": "0:0",
-          "result": "平",
-          "hcap": ""
-        },
-        {
-          "date": "2026-09-03",
-          "league": "巴西杯",
-          "home": "桑托斯",
-          "away": "帕尔梅拉斯",
-          "score": "0:0",
-          "half": "0:0",
-          "result": "平",
-          "hcap": ""
-        }
-      ]
-    },
-    "巴伊亚": {
-      "summary": "500球队页近6场完场",
-      "rows": [
-        {
-          "date": "2026-09-21",
-          "league": "巴甲",
-          "home": "巴拉纳竞技",
-          "away": "巴伊亚",
-          "score": "2:1",
-          "half": "1:1",
-          "result": "负",
-          "hcap": ""
-        },
-        {
-          "date": "2026-09-15",
-          "league": "巴甲",
-          "home": "巴伊亚",
-          "away": "雷莫",
-          "score": "2:1",
-          "half": "1:0",
           "result": "胜",
           "hcap": ""
         },
         {
           "date": "2026-09-06",
-          "league": "巴甲",
-          "home": "布拉干蒂诺RB",
-          "away": "巴伊亚",
-          "score": "2:3",
-          "half": "2:2",
+          "league": "德乙",
+          "home": "菲尔特",
+          "away": "海登海姆",
+          "score": "0:1",
+          "half": "0:1",
           "result": "胜",
           "hcap": ""
         },
         {
-          "date": "2026-08-31",
-          "league": "巴甲",
-          "home": "巴伊亚",
-          "away": "巴西国际",
-          "score": "3:2",
-          "half": "3:1",
+          "date": "2026-08-29",
+          "league": "德乙",
+          "home": "海登海姆",
+          "away": "德累斯顿",
+          "score": "5:3",
+          "half": "0:1",
           "result": "胜",
+          "hcap": ""
+        }
+      ]
+    },
+    "凯泽": {
+      "summary": "500球队页近6场完场 liansai.500.com/team/928/",
+      "rows": [
+        {
+          "date": "2026-10-03",
+          "league": "球会友谊",
+          "home": "凯泽斯劳滕",
+          "away": "格罗巴斯帕奇",
+          "score": "1:1",
+          "half": "1:0",
+          "result": "平",
           "hcap": ""
         },
         {
-          "date": "2026-08-24",
-          "league": "巴甲",
-          "home": "维多利亚",
-          "away": "巴伊亚",
-          "score": "0:2",
+          "date": "2026-09-19",
+          "league": "德乙",
+          "home": "凯泽斯劳滕",
+          "away": "布伦瑞克",
+          "score": "1:0",
           "half": "0:0",
           "result": "胜",
           "hcap": ""
         },
         {
-          "date": "2026-08-16",
-          "league": "巴甲",
-          "home": "沙佩科恩斯",
-          "away": "巴伊亚",
-          "score": "3:3",
-          "half": "1:2",
+          "date": "2026-09-12",
+          "league": "德乙",
+          "home": "马格德堡",
+          "away": "凯泽斯劳滕",
+          "score": "3:0",
+          "half": "2:0",
+          "result": "负",
+          "hcap": ""
+        },
+        {
+          "date": "2026-09-05",
+          "league": "德乙",
+          "home": "凯泽斯劳滕",
+          "away": "达姆施塔特",
+          "score": "3:0",
+          "half": "1:0",
+          "result": "胜",
+          "hcap": ""
+        },
+        {
+          "date": "2026-08-30",
+          "league": "德乙",
+          "home": "圣保利",
+          "away": "凯泽斯劳滕",
+          "score": "1:2",
+          "half": "0:1",
+          "result": "胜",
+          "hcap": ""
+        },
+        {
+          "date": "2026-08-22",
+          "league": "德国杯",
+          "home": "曼海姆",
+          "away": "凯泽斯劳滕",
+          "score": "0:0",
+          "half": "0:0",
           "result": "平",
           "hcap": ""
         }
