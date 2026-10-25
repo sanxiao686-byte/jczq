@@ -1,1 +1,1 @@
-window.H2H_PACK = Object.assign(window.H2H_PACK||{}, {});
+$(cat /tmp/h2ha.js)

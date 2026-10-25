@@ -1,7 +1,1 @@
-{
-  "generated_at": "2026-10-20T11:05:00+08:00",
-  "count": 0,
-  "matches": [],
-  "reports": [],
-  "reviews": []
-}
+$(cat /tmp/m2.json)

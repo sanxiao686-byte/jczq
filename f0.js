@@ -1,1 +1,1 @@
-window.FORM_PACK = Object.assign(window.FORM_PACK||{}, {});
+$(cat /tmp/f0.js)
