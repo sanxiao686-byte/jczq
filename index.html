@@ -1,1 +1,49 @@
-$(cat /tmp/index.html)
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>竞彩足球数据台</title>
+<style>
+/* minimal styles */
+body{font-family:sans-serif;background:#111;color:#eee;margin:0;padding:10px}
+.match{border:1px solid #333;margin:8px 0;border-radius:8px}
+.match-head{padding:10px;cursor:pointer;display:flex;align-items:center;gap:10px}
+.match-body{display:none;padding:10px}
+.match.open .match-body{display:block}
+.odds-tb{width:100%;border-collapse:collapse}
+.odds-tb td,.odds-tb th{border:1px solid #444;padding:4px;font-size:12px}
+.hl{color:#f5b942}
+.muted{color:#888}
+.sect{margin:10px 0}
+.play-grid{display:flex;flex-wrap:wrap;gap:4px}
+.p{border:1px solid #555;padding:4px;min-width:50px;text-align:center;cursor:pointer}
+.empty{text-align:center;padding:40px;color:#666}
+</style>
+</head>
+<body>
+<div id="upd"></div>
+<div id="cnt"></div>
+<div id="league-filter"></div>
+<div id="app"></div>
+<div id="rv-app"></div>
+<div id="betslip" style="display:none"></div>
+<script src="odds0.js?v=53"></script>
+<script src="odds1.js?v=53"></script>
+<script src="odds2.js?v=53"></script>
+<script src="odds.js?v=53"></script>
+<script src="app.js?v=53"></script>
+<script src="app_plays.js?v=53"></script>
+<script src="f0.js?v=53"></script>
+<script src="f0b.js?v=53"></script>
+<script src="f1.js?v=53"></script>
+<script src="f1b.js?v=53"></script>
+<script src="f2.js?v=53"></script>
+<script src="h2h.js?v=53"></script>
+<script src="h2ha.js?v=53"></script>
+<script src="h2hb.js?v=53"></script>
+<script src="plays0.js?v=53"></script>
+<script src="plays1.js?v=53"></script>
+<script src="jx.js?v=53"></script>
+</body>
+</html>
