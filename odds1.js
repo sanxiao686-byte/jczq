@@ -1,1 +1,1 @@
-$(cat /tmp/odds1.js)
+window.RO1 = {};
