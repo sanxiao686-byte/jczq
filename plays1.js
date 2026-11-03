@@ -1,1 +1,1 @@
-$(cat /tmp/plays1.js)
+window.PLAY_PACK = Object.assign(window.PLAY_PACK||{}, {});
