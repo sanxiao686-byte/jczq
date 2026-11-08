@@ -1,1 +1,1 @@
-$(cat /tmp/h2h.js)
+PLACEHOLDER
