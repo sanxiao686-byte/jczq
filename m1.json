@@ -1,1 +1,9 @@
-READ_FROM_FILE
+{
+  "generated_at": "2026-11-13T11:10:00+08:00",
+  "count": 1,
+  "matches": [
+    {"code": "周五011", "league": "国际友谊", "home": "哥伦比亚", "away": "智利", "kickoff": "2026-11-13 22:00", "fid": "", "spf": null, "rq": "", "rqspf": null}
+  ],
+  "reports": [],
+  "reviews": []
+}
